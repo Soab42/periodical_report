@@ -1,0 +1,1923 @@
+{
+  "Azampur": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Stock_of_Goods-Singer": "170913"
+    },
+    {
+      "Service_Charge_of_Singer": "28517"
+    },
+    {
+      "Telemedicine_Fee": "700"
+    },
+    {
+      "Advise_Fee_A/C": "270"
+    },
+    {
+      "Pregnancy_Test_Steep": "165"
+    },
+    {
+      "Grant_A/C": "500000"
+    },
+    {
+      "Health_Card_Sale_A/C": "569200"
+    },
+    {
+      "Advance_A/C": "148806"
+    },
+    {
+      "Blood_Groupping": "180"
+    },
+    {
+      "Diabetes_test_Steeps": "4762"
+    },
+    {
+      "Profit-Diabetes_Test": "11258"
+    },
+    {},
+    {
+      "Diabetes_test_Steeps": "2500"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "5298"
+    },
+    {
+      "Salary_&_Allowance_A/C": "11538"
+    },
+    {
+      "Office_Maintenance_A/C": "920"
+    },
+    {
+      "Pregnancy_Test_Steep": "310"
+    },
+    {
+      "Stock_of_Goods-Singer": "273040"
+    },
+    {
+      "Commision_of_Singer": "3500"
+    },
+    {
+      "Fuel_&_Lubricant_A/C": "2000"
+    },
+    {
+      "Entertainment_A/C": "90"
+    },
+    {
+      "Printing_&_Stationary_A/C": "1070"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "1063000"
+    },
+    {
+      "Stock_of_Goods-Walton": "31400"
+    },
+    {
+      "Advance_A/C": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "2800"
+    },
+    {
+      "Cash_at_Bank": "37305"
+    },
+    {},
+    {}
+  ],
+  "Badda": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Diabetes_test_Steeps": "23350"
+    },
+    {
+      "Health_Card_Sale_A/C": "531800"
+    },
+    {
+      "Stock_of_Goods-Singer": "129008"
+    },
+    {
+      "Service_Charge_of_Singer": "18962"
+    },
+    {
+      "Telemedicine_Fee": "100"
+    },
+    {
+      "Advise_Fee_A/C": "1050"
+    },
+    {
+      "Advance_A/C": "236682"
+    },
+    {
+      "Profit-Diabetes_Test": "260"
+    },
+    {
+      "Grant_A/C": "100000"
+    },
+    {
+      "Stock_of_Goods-Walton": "0"
+    },
+    {
+      "Service_Charge_of_Walton": "0"
+    },
+    {},
+    {
+      "Furniture_&_Fixture_A/C": "8500"
+    },
+    {
+      "Misc._Expenses_A/C": "293000"
+    },
+    {
+      "Advance_A/C": "3281"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "3531"
+    },
+    {
+      "Office_Maintenance_A/C": "2540"
+    },
+    {
+      "Stock_of_Goods-Singer": "114302"
+    },
+    {
+      "Commision_of_Singer": "1500"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Printing_&_Stationary_A/C": "1175"
+    },
+    {
+      "Fuel_&_Lubricant_A/C": "2000"
+    },
+    {
+      "Entertainment_A/C": "250"
+    },
+    {
+      "Commision_of_Walton": "0"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "45"
+    },
+    {
+      "Cash_at_Bank": "589688"
+    },
+    {},
+    {}
+  ],
+  "Sabuzbag": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Advance_A/C": "258287"
+    },
+    {
+      "Medicine_A/C": "14821"
+    },
+    {
+      "Optic_(Glass)": "10120"
+    },
+    {
+      "Diabetes_test_Steeps": "10469"
+    },
+    {
+      "Grant_A/C": "300000"
+    },
+    {
+      "Staff_Scecurity": "10000"
+    },
+    {
+      "Health_Card_Sale_A/C": "474000"
+    },
+    {
+      "Advise_Fee_A/C": "3370"
+    },
+    {
+      "Profit_of_Optic_(Glass)": "6080"
+    },
+    {
+      "Profit_of_Medicine_sale": "1759"
+    },
+    {
+      "Test-Investigation_A/C": "100"
+    },
+    {
+      "Stock_of_Goods-Singer": "57200"
+    },
+    {
+      "Service_Charge_of_Singer": "7780"
+    },
+    {
+      "Telemedicine_Fee": "4500"
+    },
+    {
+      "Pregnancy_Test_Steep": "50"
+    },
+    {
+      "Ray_Therapy": "150"
+    },
+    {
+      "Profit-Diabetes_Test": "18186"
+    },
+    {
+      "Blood_Groupping": "540"
+    },
+    {},
+    {
+      "Health_Equipment_A/C": "13500"
+    },
+    {
+      "Furniture_&_Fixture_A/C": "8900"
+    },
+    {
+      "Misc._Expenses_A/C": "150818"
+    },
+    {
+      "Medicine_A/C": "15305"
+    },
+    {
+      "Diabetes_test_Steeps": "3500"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "6223"
+    },
+    {
+      "Salary_&_Allowance_A/C": "560090"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "1370"
+    },
+    {
+      "Printing_&_Stationary_A/C": "1985"
+    },
+    {
+      "Office_Maintenance_A/C": "2050"
+    },
+    {
+      "Entertainment_A/C": "2921"
+    },
+    {
+      "Stock_of_Goods-Singer": "166225"
+    },
+    {
+      "Commision_of_Singer": "1000"
+    },
+    {
+      "Optic_(Glass)": "2420"
+    },
+    {
+      "Advance_A/C": "217000"
+    },
+    {
+      "Fuel_&_Lubricant_A/C": "1000"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {},
+    {
+      "Cash_in_Hand": "500"
+    },
+    {
+      "Cash_at_Bank": "1205"
+    },
+    {},
+    {}
+  ],
+  "Jatrabari": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Advance_A/C": "341735"
+    },
+    {
+      "Grant_A/C": "300000"
+    },
+    {
+      "Health_Card_Sale_A/C": "507400"
+    },
+    {
+      "Profit_of_Optic_(Glass)": "200"
+    },
+    {
+      "Telemedicine_Fee": "1500"
+    },
+    {
+      "Advise_Fee_A/C": "150"
+    },
+    {
+      "Profit-Diabetes_Test": "10670"
+    },
+    {
+      "Stock_of_Goods-Singer": "95621"
+    },
+    {
+      "Service_Charge_of_Singer": "15349"
+    },
+    {
+      "Diabetes_test_Steeps": "6625"
+    },
+    {
+      "Health_Equipment_A/C": "4000"
+    },
+    {
+      "Blood_Groupping": "30"
+    },
+    {
+      "Medicine_A/C": "15679"
+    },
+    {
+      "Optic_(Glass)": "4500"
+    },
+    {
+      "Registration_Fee": "1750"
+    },
+    {
+      "Profit_of_Medicine_sale": "0"
+    },
+    {},
+    {
+      "Office_Equipment_A/C": "8500"
+    },
+    {
+      "Misc._Expenses_A/C": "680000"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "5827"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "1174"
+    },
+    {
+      "Printing_&_Stationary_A/C": "1890"
+    },
+    {
+      "Entertainment_A/C": "12253"
+    },
+    {
+      "Stock_of_Goods-Singer": "164532"
+    },
+    {
+      "Commision_of_Singer": "2000"
+    },
+    {
+      "Camp_Arrangement_Fee": "1000"
+    },
+    {
+      "Salary_&_Allowance_A/C": "54653"
+    },
+    {
+      "Mobile_&_Telephone_Bill_A/C": "193"
+    },
+    {
+      "Medicine_A/C": "40103"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "250000"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Profit_of_Medicine_sale": "0"
+    },
+    {
+      "Optic_(Glass)": "0"
+    },
+    {
+      "Postage_&_Telegram_A/C": "0"
+    },
+    {
+      "Office_Maintenance_A/C": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "1246"
+    },
+    {
+      "Cash_at_Bank": "60438"
+    },
+    {},
+    {}
+  ],
+  "Konapara": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Advance_A/C": "6600"
+    },
+    {
+      "Optic_(Glass)": "60"
+    },
+    {
+      "Diabetes_test_Steeps": "7977"
+    },
+    {
+      "Staff_Scecurity": "12000"
+    },
+    {
+      "Health_Card_Sale_A/C": "636400"
+    },
+    {
+      "Profit_of_Optic_(Glass)": "140"
+    },
+    {
+      "Stock_of_Goods-Singer": "124626"
+    },
+    {
+      "Service_Charge_of_Singer": "12844"
+    },
+    {
+      "Advise_Fee_A/C": "1350"
+    },
+    {
+      "Profit-Diabetes_Test": "17618"
+    },
+    {
+      "Grant_A/C": "500000"
+    },
+    {},
+    {
+      "Office_Equipment_A/C": "2700"
+    },
+    {
+      "Health_Equipment_A/C": "13375"
+    },
+    {
+      "Furniture_&_Fixture_A/C": "8500"
+    },
+    {
+      "Misc._Expenses_A/C": "420500"
+    },
+    {
+      "Advise_Fee_A/C": "6600"
+    },
+    {
+      "Medicine_A/C": "275"
+    },
+    {
+      "Diabetes_test_Steeps": "18605"
+    },
+    {
+      "Staff_Scecurity": "12000"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "7715"
+    },
+    {
+      "Salary_&_Allowance_A/C": "261556"
+    },
+    {
+      "Training_&_Workshop_A/C": "1865"
+    },
+    {
+      "Printing_&_Stationary_A/C": "15730"
+    },
+    {
+      "Office_Maintenance_A/C": "2590"
+    },
+    {
+      "Entertainment_A/C": "620"
+    },
+    {
+      "Postage_&_Telegram_A/C": "300"
+    },
+    {
+      "Stock_of_Goods-Singer": "124867"
+    },
+    {
+      "Commision_of_Singer": "1000"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "1652"
+    },
+    {
+      "Grant_A/C": "367000"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "0"
+    },
+    {
+      "Advance_A/C": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "200"
+    },
+    {
+      "Cash_at_Bank": "30565"
+    },
+    {},
+    {}
+  ],
+  "Dakkhin khan": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Diabetes_test_Steeps": "2465"
+    },
+    {
+      "Grant_A/C": "300000"
+    },
+    {
+      "Staff_Scecurity": "14000"
+    },
+    {
+      "Health_Card_Sale_A/C": "418800"
+    },
+    {
+      "Stock_of_Goods-Singer": "79231"
+    },
+    {
+      "Service_Charge_of_Singer": "9910"
+    },
+    {
+      "Telemedicine_Fee": "1150"
+    },
+    {
+      "Profit-Diabetes_Test": "18990"
+    },
+    {
+      "Pregnancy_Test_Steep": "150"
+    },
+    {
+      "Nebulization": "200"
+    },
+    {
+      "Advance_A/C": "161123"
+    },
+    {
+      "Blood_Groupping": "60"
+    },
+    {
+      "Health_Equipment_A/C": "1600"
+    },
+    {
+      "Medicine_A/C": "100"
+    },
+    {
+      "Stock_of_Goods-Walton": "0"
+    },
+    {
+      "Service_Charge_of_Walton": "0"
+    },
+    {},
+    {
+      "Health_Equipment_A/C": "17840"
+    },
+    {
+      "Misc._Expenses_A/C": "80000"
+    },
+    {
+      "Advance_A/C": "160313"
+    },
+    {
+      "Diabetes_test_Steeps": "15180"
+    },
+    {
+      "Staff_Scecurity": "14000"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "3642"
+    },
+    {
+      "Salary_&_Allowance_A/C": "389633"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "115"
+    },
+    {
+      "Printing_&_Stationary_A/C": "10288"
+    },
+    {
+      "Office_Maintenance_A/C": "2225"
+    },
+    {
+      "Entertainment_A/C": "310"
+    },
+    {
+      "Commision_Expenses_A/C": "500"
+    },
+    {
+      "Commision_of_Singer": "500"
+    },
+    {
+      "Stock_of_Goods-Singer": "68643"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "150000"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Commision_of_Walton": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "73190"
+    },
+    {},
+    {}
+  ],
+  "Panchaboti": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Diabetes_test_Steeps": "2939"
+    },
+    {
+      "Grant_A/C": "400000"
+    },
+    {
+      "Staff_Wellfare_Fund_(SWF)": "600"
+    },
+    {
+      "Staff_Scecurity": "14000"
+    },
+    {
+      "Advance_A/C": "300000"
+    },
+    {
+      "Health_Card_Sale_A/C": "754200"
+    },
+    {
+      "Stock_of_Goods-Singer": "73947"
+    },
+    {
+      "Service_Charge_of_Singer": "9923"
+    },
+    {
+      "Bank_Interest_A/C": "13824"
+    },
+    {
+      "Telemedicine_Fee": "50"
+    },
+    {
+      "Advise_Fee_A/C": "420"
+    },
+    {
+      "Profit-Diabetes_Test": "20986"
+    },
+    {
+      "Pregnancy_Test_Steep": "315"
+    },
+    {
+      "Stock_of_Goods-Walton": "31400"
+    },
+    {
+      "Service_Charge_of_Walton": "7590"
+    },
+    {},
+    {
+      "Office_Equipment_A/C": "3000"
+    },
+    {
+      "Furniture_&_Fixture_A/C": "8000"
+    },
+    {
+      "Misc._Expenses_A/C": "781275"
+    },
+    {
+      "Diabetes_test_Steeps": "7574"
+    },
+    {
+      "Medicine_A/C": "400"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "5196"
+    },
+    {
+      "Salary_&_Allowance_A/C": "325185"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "860"
+    },
+    {
+      "Printing_&_Stationary_A/C": "880"
+    },
+    {
+      "Office_Maintenance_A/C": "1855"
+    },
+    {
+      "Entertainment_A/C": "300"
+    },
+    {
+      "Postage_&_Telegram_A/C": "400"
+    },
+    {
+      "Pregnancy_Test_Steep": "300"
+    },
+    {
+      "Commision_Expenses_A/C": "30"
+    },
+    {
+      "Stock_of_Goods-Singer": "129590"
+    },
+    {
+      "Provision-Stock_of_Goods-Singer": "16707"
+    },
+    {
+      "Commision_of_Singer": "1000"
+    },
+    {
+      "Commision_of_Walton": "500"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "300000"
+    },
+    {
+      "Stock_of_Goods-Walton": "31400"
+    },
+    {
+      "Advance_A/C": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "15742"
+    },
+    {},
+    {}
+  ],
+  "Postogola": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Advance_A/C": "100000"
+    },
+    {
+      "Diabetes_test_Steeps": "528"
+    },
+    {
+      "Grant_A/C": "200000"
+    },
+    {
+      "Health_Card_Sale_A/C": "725400"
+    },
+    {
+      "Stock_of_Goods-Singer": "173634"
+    },
+    {
+      "Service_Charge_of_Singer": "20146"
+    },
+    {
+      "Advise_Fee_A/C": "360"
+    },
+    {
+      "Profit-Diabetes_Test": "15707"
+    },
+    {
+      "Bank_Interest_A/C": "4127"
+    },
+    {
+      "Accumulated_Depriciation": "600"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_of_Walton": "6500"
+    },
+    {
+      "Telemedicine_Fee": "0"
+    },
+    {},
+    {
+      "Grant_A/C": "250000"
+    },
+    {
+      "Health_Card_Sale_A/C": "313000"
+    },
+    {
+      "Printing_&_Stationary_A/C": "795"
+    },
+    {
+      "Entertainment_A/C": "11336"
+    },
+    {
+      "Stock_of_Goods-Singer": "212182"
+    },
+    {
+      "Commision_of_Singer": "3000"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "1880"
+    },
+    {
+      "Commision_of_Walton": "500"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "1600"
+    },
+    {
+      "Cash_at_Bank": "452709"
+    },
+    {},
+    {}
+  ],
+  "Fotulla-2": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Diabetes_test_Steeps": "877"
+    },
+    {
+      "Grant_A/C": "600000"
+    },
+    {
+      "Staff_Scecurity": "6000"
+    },
+    {
+      "Health_Card_Sale_A/C": "1021400"
+    },
+    {
+      "Stock_of_Goods-Singer": "78583"
+    },
+    {
+      "Service_Charge_of_Singer": "7671"
+    },
+    {
+      "Bank_Interest_A/C": "7332"
+    },
+    {
+      "Misc._Income_A/C": "2000"
+    },
+    {
+      "Profit-Diabetes_Test": "9948"
+    },
+    {
+      "Telemedicine_Fee": "0"
+    },
+    {},
+    {
+      "Office_Equipment_A/C": "13785"
+    },
+    {
+      "Furniture_&_Fixture_A/C": "6000"
+    },
+    {
+      "Misc._Expenses_A/C": "940000"
+    },
+    {
+      "Medicine_A/C": "7973"
+    },
+    {
+      "Diabetes_test_Steeps": "3500"
+    },
+    {
+      "Staff_Scecurity": "6000"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "8643"
+    },
+    {
+      "Salary_&_Allowance_A/C": "266048"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "1125"
+    },
+    {
+      "Printing_&_Stationary_A/C": "11700"
+    },
+    {
+      "Office_Maintenance_A/C": "150"
+    },
+    {
+      "Entertainment_A/C": "4523"
+    },
+    {
+      "Stock_of_Goods-Singer": "129590"
+    },
+    {
+      "Commision_of_Singer": "1000"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "300000"
+    },
+    {},
+    {
+      "Cash_in_Hand": "4104"
+    },
+    {
+      "Cash_at_Bank": "29670"
+    },
+    {},
+    {}
+  ],
+  "Uttara": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Diabetes_test_Steeps": "1822"
+    },
+    {
+      "Grant_A/C": "400000"
+    },
+    {
+      "Health_Card_Sale_A/C": "644200"
+    },
+    {
+      "Stock_of_Goods-Singer": "144987"
+    },
+    {
+      "Service_Charge_of_Singer": "8714"
+    },
+    {
+      "Telemedicine_Fee": "800"
+    },
+    {
+      "Advise_Fee_A/C": "270"
+    },
+    {
+      "Profit-Diabetes_Test": "13083"
+    },
+    {
+      "Nebulization": "180"
+    },
+    {
+      "Stock_of_Goods-Walton": "31400"
+    },
+    {
+      "Service_Charge_of_Walton": "7590"
+    },
+    {
+      "Accumulated_Depriciation": "4800"
+    },
+    {
+      "Provision-Stock_of_Goods-Singer": "28490"
+    },
+    {
+      "Advance_A/C": "100000"
+    },
+    {},
+    {
+      "Commision_Expenses_A/C": "470000"
+    },
+    {
+      "Diabetes_test_Steeps": "2500"
+    },
+    {
+      "Health_Card_Sale_A/C": "182400"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "3920"
+    },
+    {
+      "Office_Maintenance_A/C": "1895"
+    },
+    {
+      "Entertainment_A/C": "10076"
+    },
+    {
+      "Stock_of_Goods-Singer": "248476"
+    },
+    {
+      "Commision_of_Singer": "1500"
+    },
+    {
+      "Commision_of_Walton": "500"
+    },
+    {
+      "Stock_of_Goods-Walton": "31400"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "350000"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "0"
+    },
+    {
+      "Advance_A/C": "0"
+    },
+    {
+      "Printing_&_Stationary_A/C": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "4400"
+    },
+    {
+      "Cash_at_Bank": "79269"
+    },
+    {},
+    {}
+  ],
+  "Lalbag": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Medicine_A/C": "19890"
+    },
+    {
+      "Optic_(Glass)": "4924"
+    },
+    {
+      "Grant_A/C": "200000"
+    },
+    {
+      "Staff_Scecurity": "10000"
+    },
+    {
+      "Health_Card_Sale_A/C": "415800"
+    },
+    {
+      "Registration_Fee": "3000"
+    },
+    {
+      "Profit_of_Optic_(Glass)": "10876"
+    },
+    {
+      "Profit_of_Medicine_sale": "4897"
+    },
+    {
+      "Test-Investigation_A/C": "1100"
+    },
+    {
+      "Service_Charge_of_Singer": "19913"
+    },
+    {
+      "Stock_of_Goods-Singer": "151538"
+    },
+    {
+      "Telemedicine_Fee": "5100"
+    },
+    {
+      "Advise_Fee_A/C": "150"
+    },
+    {
+      "Profit-Diabetes_Test": "19499"
+    },
+    {
+      "Ray_Therapy": "360"
+    },
+    {
+      "Advance_A/C": "389457"
+    },
+    {
+      "Blood_Groupping": "120"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_of_Walton": "6500"
+    },
+    {
+      "Diabetes_test_Steeps": "4086"
+    },
+    {},
+    {
+      "Advance_A/C": "389457"
+    },
+    {
+      "Diabetes_test_Steeps": "7400"
+    },
+    {
+      "Grant_A/C": "100000"
+    },
+    {
+      "Staff_Scecurity": "4000"
+    },
+    {
+      "Salary_&_Allowance_A/C": "490468"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "57798"
+    },
+    {
+      "Office_Maintenance_A/C": "1349"
+    },
+    {
+      "Entertainment_A/C": "720"
+    },
+    {
+      "Mobile_&_Telephone_Bill_A/C": "13500"
+    },
+    {
+      "Camp_Arrangement_Fee": "1000"
+    },
+    {
+      "Stock_of_Goods-Singer": "152946"
+    },
+    {
+      "Commision_of_Singer": "2500"
+    },
+    {
+      "Optic_(Glass)": "6838"
+    },
+    {
+      "Commision_of_Walton": "500"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "0"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "0"
+    },
+    {
+      "Printing_&_Stationary_A/C": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "38734"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {},
+    {}
+  ],
+  "Dhanmondi": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Advance_A/C": "82000"
+    },
+    {
+      "Diabetes_test_Steeps": "974"
+    },
+    {
+      "Grant_A/C": "800000"
+    },
+    {
+      "Staff_Scecurity": "12000"
+    },
+    {
+      "Health_Card_Sale_A/C": "568400"
+    },
+    {
+      "Service_Charge_of_Singer": "3716"
+    },
+    {
+      "Stock_of_Goods-Singer": "29117"
+    },
+    {
+      "Bank_Interest_A/C": "8024"
+    },
+    {
+      "Profit_of_Medicine_sale": "20851"
+    },
+    {
+      "Advise_Fee_A/C": "500"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_of_Walton": "6500"
+    },
+    {
+      "Telemedicine_Fee": "0"
+    },
+    {},
+    {
+      "Office_Equipment_A/C": "2700"
+    },
+    {
+      "Furniture_&_Fixture_A/C": "8100"
+    },
+    {
+      "Advance_A/C": "82000"
+    },
+    {
+      "Diabetes_test_Steeps": "7430"
+    },
+    {
+      "Grant_A/C": "100000"
+    },
+    {
+      "Staff_Scecurity": "12000"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "7089"
+    },
+    {
+      "Salary_&_Allowance_A/C": "230382"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "260"
+    },
+    {
+      "Printing_&_Stationary_A/C": "14467"
+    },
+    {
+      "Office_Maintenance_A/C": "3395"
+    },
+    {
+      "Entertainment_A/C": "5165"
+    },
+    {
+      "Stock_of_Goods-Singer": "98043"
+    },
+    {
+      "Commision_of_Singer": "500"
+    },
+    {
+      "Commision_of_Walton": "500"
+    },
+    {
+      "Stock_of_Goods-Walton": "42800"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "900000"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "38651"
+    },
+    {},
+    {}
+  ],
+  "Noyabazarone": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Medicine_A/C": "4621"
+    },
+    {
+      "Diabetes_test_Steeps": "13361"
+    },
+    {
+      "Grant_A/C": "900000"
+    },
+    {
+      "Staff_Wellfare_Fund_(SWF)": "650"
+    },
+    {
+      "Staff_Scecurity": "14000"
+    },
+    {
+      "Health_Card_Sale_A/C": "1414000"
+    },
+    {
+      "Registration_Fee": "2947"
+    },
+    {
+      "Profit_of_Medicine_sale": "1104"
+    },
+    {
+      "Test-Investigation_A/C": "100"
+    },
+    {
+      "Provision-Stock_of_Goods-Singer": "90409"
+    },
+    {
+      "Service_Charge_of_Singer": "17342"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "9597"
+    },
+    {
+      "Telemedicine_Fee": "1400"
+    },
+    {
+      "Advise_Fee_A/C": "1050"
+    },
+    {
+      "Profit-Diabetes_Test": "30659"
+    },
+    {
+      "Pregnancy_Test_Steep": "220"
+    },
+    {
+      "Stock_of_Goods-Singer": "53026"
+    },
+    {
+      "Bank_Interest_A/C": "3529"
+    },
+    {
+      "Advance_A/C": "0"
+    },
+    {
+      "Stock_of_Goods-Walton": "0"
+    },
+    {
+      "Service_Charge_of_Walton": "0"
+    },
+    {},
+    {
+      "Misc._Expenses_A/C": "923090"
+    },
+    {
+      "Diabetes_test_Steeps": "7450"
+    },
+    {
+      "Grant_A/C": "400000"
+    },
+    {
+      "Staff_Scecurity": "6000"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "5946"
+    },
+    {
+      "Salary_&_Allowance_A/C": "374421"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "45313"
+    },
+    {
+      "Printing_&_Stationary_A/C": "20270"
+    },
+    {
+      "Office_Maintenance_A/C": "10448"
+    },
+    {
+      "Entertainment_A/C": "3789"
+    },
+    {
+      "Mobile_&_Telephone_Bill_A/C": "11871"
+    },
+    {
+      "Pregnancy_Test_Steep": "30"
+    },
+    {
+      "Commision_Expenses_A/C": "595"
+    },
+    {
+      "Commision_of_Singer": "2000"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "111704"
+    },
+    {
+      "Stock_of_Goods-Singer": "104816"
+    },
+    {
+      "Stock_of_Goods-Walton": "31400"
+    },
+    {
+      "Commision_of_Walton": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "4669"
+    },
+    {
+      "Cash_at_Bank": "494203"
+    },
+    {},
+    {}
+  ],
+  "Shamoly": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Advance_A/C": "60000"
+    },
+    {
+      "Diabetes_test_Steeps": "3271"
+    },
+    {
+      "Grant_A/C": "300000"
+    },
+    {
+      "Staff_Scecurity": "4000"
+    },
+    {
+      "Health_Card_Sale_A/C": "564400"
+    },
+    {
+      "Registration_Fee": "1400"
+    },
+    {
+      "Profit_of_Optic_(Glass)": "1000"
+    },
+    {
+      "Profit_of_Medicine_sale": "6610"
+    },
+    {
+      "Test-Investigation_A/C": "600"
+    },
+    {
+      "Stock_of_Goods-Singer": "146557"
+    },
+    {
+      "Service_Charge_of_Singer": "17884"
+    },
+    {
+      "Bank_Interest_A/C": "3546"
+    },
+    {
+      "Telemedicine_Fee": "150"
+    },
+    {
+      "Advise_Fee_A/C": "360"
+    },
+    {
+      "Misc._Income_A/C": "50"
+    },
+    {
+      "Profit-Diabetes_Test": "23634"
+    },
+    {
+      "Service_Charge_of_Walton": "6500"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {},
+    {
+      "Health_Equipment_A/C": "13575"
+    },
+    {
+      "Advance_A/C": "60000"
+    },
+    {
+      "Diabetes_test_Steeps": "11155"
+    },
+    {
+      "Staff_Scecurity": "4000"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "5542"
+    },
+    {
+      "Salary_&_Allowance_A/C": "381184"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "760"
+    },
+    {
+      "Printing_&_Stationary_A/C": "17735"
+    },
+    {
+      "Office_Maintenance_A/C": "2826"
+    },
+    {
+      "Entertainment_A/C": "1726"
+    },
+    {
+      "Stock_of_Goods-Singer": "145419"
+    },
+    {
+      "Commision_of_Singer": "2500"
+    },
+    {
+      "Commision_of_Walton": "500"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "350000"
+    },
+    {
+      "Grant_A/C": "50000"
+    },
+    {},
+    {
+      "Cash_in_Hand": "200"
+    },
+    {
+      "Cash_at_Bank": "92840"
+    },
+    {},
+    {}
+  ],
+  "Armanitola": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Health_Card_Sale_A/C": "645461"
+    },
+    {
+      "Stock_of_Goods-Singer": "130582"
+    },
+    {
+      "Service_Charge_of_Singer": "23667"
+    },
+    {
+      "Bank_Interest_A/C": "14225"
+    },
+    {
+      "Telemedicine_Fee": "150"
+    },
+    {
+      "Advise_Fee_A/C": "80"
+    },
+    {
+      "Profit-Diabetes_Test": "14730"
+    },
+    {
+      "Grant_A/C": "500000"
+    },
+    {
+      "Provision-Stock_of_Goods-Singer": "37383"
+    },
+    {
+      "Advance_A/C": "0"
+    },
+    {},
+    {
+      "Misc._Expenses_A/C": "500000"
+    },
+    {
+      "Grant_A/C": "200000"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "7774"
+    },
+    {
+      "Printing_&_Stationary_A/C": "18262"
+    },
+    {
+      "Office_Maintenance_A/C": "168"
+    },
+    {
+      "Entertainment_A/C": "11386"
+    },
+    {
+      "Stock_of_Goods-Singer": "236579"
+    },
+    {
+      "Commision_of_Singer": "2500"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "0"
+    },
+    {
+      "Advance_A/C": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "420"
+    },
+    {
+      "Cash_at_Bank": "367789"
+    },
+    {},
+    {}
+  ],
+  "Noyabazar-2": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Health_Card_Sale_A/C": "342400"
+    },
+    {
+      "Stock_of_Goods-Singer": "89674"
+    },
+    {
+      "Service_Charge_of_Singer": "8189"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_of_Walton": "8590"
+    },
+    {
+      "Grant_A/C": "100000"
+    },
+    {},
+    {
+      "Health_Card_Sale_A/C": "229339"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "700"
+    },
+    {
+      "Office_Maintenance_A/C": "336"
+    },
+    {
+      "Entertainment_A/C": "6516"
+    },
+    {
+      "Commision_of_Singer": "1000"
+    },
+    {
+      "Stock_of_Goods-Singer": "27452"
+    },
+    {
+      "Commision_of_Walton": "500"
+    },
+    {
+      "Provision-Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Printing_&_Stationary_A/C": "300"
+    },
+    {
+      "Provision-Stock_of_Goods-Singer": "86547"
+    },
+    {
+      "Travelling_&_Conveyance_A/C": "0"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "2879"
+    },
+    {
+      "Cash_at_Bank": "193284"
+    },
+    {},
+    {}
+  ],
+  "noyabazar090": [
+    {
+      "Description": "Cumulative : Up To (2023-01-31)"
+    },
+    {},
+    {
+      "Cash_in_Hand": "0"
+    },
+    {
+      "Cash_at_Bank": "0"
+    },
+    {
+      "Total_Cash_in_Hand_&_Cash_at_Bank": "0"
+    },
+    null,
+    {
+      "Grant_A/C": "200000"
+    },
+    {
+      "Health_Card_Sale_A/C": "447800"
+    },
+    {
+      "Stock_of_Goods-Singer": "80908"
+    },
+    {
+      "Service_Charge_of_Singer": "12062"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_of_Walton": "6500"
+    },
+    {
+      "Telemedicine_Fee": "0"
+    },
+    {},
+    {
+      "Grant_A/C": "100000"
+    },
+    {
+      "Health_Card_Sale_A/C": "325641"
+    },
+    {
+      "Bank_Charge_&_Commission_A/C": "690"
+    },
+    {
+      "Salary_&_Allowance_A/C": "5690"
+    },
+    {
+      "Entertainment_A/C": "7470"
+    },
+    {
+      "Commision_of_Singer": "1000"
+    },
+    {
+      "Commision_Expenses_A/C": "500"
+    },
+    {
+      "Stock_of_Goods-Singer": "104816"
+    },
+    {
+      "Commision_of_Walton": "500"
+    },
+    {
+      "Stock_of_Goods-Walton": "21400"
+    },
+    {
+      "Service_Charge_paid_Head_Office": "0"
+    },
+    {},
+    {
+      "Cash_in_Hand": "2499"
+    },
+    {
+      "Cash_at_Bank": "198464"
+    },
+    {},
+    {}
+  ]
+}

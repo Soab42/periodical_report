@@ -1,0 +1,11 @@
+{
+  "name": "health",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.2",
+    "puppeteer-cluster": "^0.23.0"
+  }
+}
