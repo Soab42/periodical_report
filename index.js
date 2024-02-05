@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   searchForm.addEventListener("submit", searchByDate);
 
   function startCountdown() {
-    let countdownTime = 300;
+    let countdownTime = 180;
     updateClock(countdownTime);
 
     let countdownInterval = setInterval(function () {
