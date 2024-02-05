@@ -71,3 +71,63 @@ h1 {
   font-style: normal;
   font-size: xx-large;
 }
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000ca;
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.innerSvg {
+  width: 40rem;
+}
+.hidden {
+  display: none;
+}
+
+.flip-clock {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #9de33b;
+  /* align-items: center; */
+  gap: 1rem;
+  font-size: 5rem;
+
+  transition: all 1s ease;
+}
+
+.flip {
+  perspective: 1000px;
+  margin: 0 5px;
+}
+
+.flip div {
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% 0;
+  transition: transform 0.5s;
+}
+
+.flip .upper,
+.flip .lower {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.flip .upper {
+  transform: rotateX(0deg);
+}
+
+.flip .lower {
+  transform: rotateX(180deg);
+}

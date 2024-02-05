@@ -22,6 +22,7 @@ const loginCredentials = [
 
 document.addEventListener("DOMContentLoaded", () => {
   const getDataButton = document.getElementById("getData");
+  const loading = document.getElementById("loading");
   const searchForm = document.querySelector("form");
 
   const fetchData = () => {
@@ -52,6 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // console.log(fromDate);
     // console.log(toDate);
     // Make a POST request to your API endpoint with the form data
+    loading.classList.remove("hidden");
+
+    loading.classList.add("loading");
+
     fetch("http://localhost:3000/api/scraping", {
       method: "POST",
       headers: {
@@ -60,9 +65,52 @@ document.addEventListener("DOMContentLoaded", () => {
       body: JSON.stringify({ fromDate, toDate }),
     })
       .then((response) => response.json())
-      // .then((data) => console.log(data))
+      .then((data) => loading.classList.add("hidden"))
       .catch((error) => console.error("Error:", error));
   }
   getDataButton.addEventListener("click", fetchData);
   searchForm.addEventListener("submit", searchByDate);
+
+  function startCountdown() {
+    let countdownTime = 300;
+    updateClock(countdownTime);
+
+    let countdownInterval = setInterval(function () {
+      countdownTime--;
+
+      if (countdownTime >= 0) {
+        updateClock(countdownTime);
+      } else {
+        clearInterval(countdownInterval);
+      }
+    }, 1000);
+
+    function updateClock(timeInSeconds) {
+      const minutes = Math.floor(timeInSeconds / 60);
+      const seconds = timeInSeconds % 60;
+
+      const minutesStr = String(minutes).padStart(2, "0");
+      const secondsStr = String(seconds).padStart(2, "0");
+
+      const clock = document.getElementById("countdown-clock");
+      clock.innerHTML = `
+  <div class="flip">${createFlipCard(minutesStr[0])}</div>
+  <div class="flip">${createFlipCard(minutesStr[1])}</div>
+  <br></br>
+  <div class="flip-divider">:</div>
+  <div class="flip">${createFlipCard(secondsStr[0])}</div>
+  <div class="flip">${createFlipCard(secondsStr[1])}</div>
+`;
+    }
+
+    function createFlipCard(digit) {
+      return `
+  <div class="flip">
+    <div class="upper">${digit}</div>
+    <div class="lower">${digit}</div>
+  </div>
+`;
+    }
+  }
+  startCountdown();
 });
