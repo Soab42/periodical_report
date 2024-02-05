@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const fromDate = document.getElementById("from").value;
 
     const toDate = document.getElementById("toDate").value;
-    console.log(fromDate);
-    console.log(toDate);
+    // console.log(fromDate);
+    // console.log(toDate);
     // Make a POST request to your API endpoint with the form data
     fetch("http://localhost:3000/api/scraping", {
       method: "POST",
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
       body: JSON.stringify({ fromDate, toDate }),
     })
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      // .then((data) => console.log(data))
       .catch((error) => console.error("Error:", error));
   }
   getDataButton.addEventListener("click", fetchData);
