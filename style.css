@@ -212,3 +212,7 @@ nav {
     transform: translateY(0);
   }
 }
+
+.container {
+  margin-top: 10rem;
+}

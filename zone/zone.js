@@ -1,11 +1,14 @@
 const jsonDisplay = document.querySelector("tbody");
 const agrogotiDisplay = document.getElementById("agrogoti");
+const container = document.getElementById("container");
 const infoDiv = document.getElementById("info");
 const total_periodical_progress_information = [];
 let serialNumber = 1;
 let serialNumber2 = 1;
 let totalData;
-const fetchData = () => {
+const fetchData = async () => {
+  try {
+  } catch (error) {}
   fetch("http://localhost:3000/api/data")
     .then((response) => response.json())
     .then((data) => {
@@ -17,7 +20,10 @@ const fetchData = () => {
       showAgrogotiTotalRow();
       // console.log(totalRow);
     })
-    .catch((error) => console.error("Error fetching JSON:", error));
+    .catch((error) => {
+      console.error("Error fetching JSON:", error);
+      container.innerHTML = `<div class="error">${error.message}</div>`;
+    });
 };
 
 fetchData();
