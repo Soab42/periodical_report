@@ -1,31 +1,12 @@
-const loginCredentials = [
-  { username: "sabuzbag" },
-  { username: "badda" },
-  { username: "jatrabari040" },
-  { username: "konapara" },
-  { username: "nayabazar1" },
-  { username: "noyabazar2" },
-  { username: "noyabazar3" },
-  { username: "Nayabazar-2" },
-  { username: "azampur" },
-  { username: "dkhan063" },
-  { username: "uttara103" },
-  { username: "panchaboti" },
-  { username: "postogola123" },
-  { username: "fotulla-2" },
-  { username: "samoli" },
-  { username: "lalbag" },
-  { username: "dhanmondi" },
-  { username: "Sastapur2" },
-  { username: "fotulla-1" },
-];
-
 document.addEventListener("DOMContentLoaded", () => {
-  const getDataButton = document.getElementById("getData");
   const loading = document.getElementById("loading");
   const searchForm = document.querySelector("form");
+  const errorDiv = document.getElementById("error");
 
   const fetchData = () => {
+    loading.classList.remove("hidden");
+    loading.classList.add("loading");
+
     fetch("http://localhost:3000/api/data")
       .then((response) => response.json())
       .then((data) => {
@@ -41,8 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
             jsonDisplay.innerHTML += `<p>No data found for username: ${key}</p><br>`;
           }
         }
+        loading.classList.add("hidden");
       })
-      .catch((error) => console.error("Error fetching JSON:", error));
+      .catch((error) => {
+        console.error("Error fetching JSON:", error),
+          (errorDiv.innerHTML = `<div class='error'>${error}</div>`);
+        loading.classList.add("hidden");
+      });
   };
   function searchByDate(event) {
     event.preventDefault();
@@ -65,10 +51,16 @@ document.addEventListener("DOMContentLoaded", () => {
       body: JSON.stringify({ fromDate, toDate }),
     })
       .then((response) => response.json())
-      .then((data) => loading.classList.add("hidden"))
-      .catch((error) => console.error("Error:", error));
+      .then((data) => {
+        loading.classList.add("hidden"), fetchData();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        loading.classList.add("hidden");
+        errorDiv.innerHTML = `<div class='error'>${error}</div>`;
+      });
   }
-  getDataButton.addEventListener("click", fetchData);
+  fetchData();
   searchForm.addEventListener("submit", searchByDate);
 
   function startCountdown() {
@@ -76,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateClock(countdownTime);
 
     let countdownInterval = setInterval(function () {
-      countdownTime--;
+      countdownTime++;
 
       if (countdownTime >= 0) {
         updateClock(countdownTime);
@@ -114,3 +106,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   startCountdown();
 });
+
+// Function to scroll to the top of the page
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+// Show the button when user scrolls down, hide when at top
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "flex";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);

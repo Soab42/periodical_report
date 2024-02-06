@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 form {
   display: flex;
   justify-content: center;
@@ -58,16 +61,16 @@ a {
   padding: 1rem;
   margin: 1rem;
   cursor: pointer;
+  border-radius: 10rem;
+  float: right;
   transition: background 0.31s ease-in-out;
 }
 a:hover {
   background-color: bisque;
 }
 h1 {
-  width: 100%;
+  width: 100%-2rem;
   text-align: center;
-  background: bisque;
-  padding: 1rem;
   font-style: normal;
   font-size: xx-large;
 }
@@ -130,4 +133,64 @@ h1 {
 
 .flip .lower {
   transform: rotateX(180deg);
+}
+.error {
+  background-color: rgb(249, 26, 126);
+  /* font-size: larger; */
+  color: bisque;
+  padding: 0.4rem;
+  width: 100%-2rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(185, 23, 23, 0.277);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0px 10px 10px rgba(177, 9, 9, 0);
+  padding-bottom: 0.5rem;
+}
+#json-display {
+  margin-top: 15rem;
+}
+#dataTable {
+  margin-top: 10rem;
+}
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #2eb7ec;
+  color: rgba(1, 6, 2, 0.64);
+  cursor: pointer;
+  /* padding: 15px; */
+  border-radius: 10rem;
+  transition: all 1s ease-in-out;
+}
+.svg {
+  animation: upAnimation 1s infinite ease-in-out;
+}
+@keyframes upAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

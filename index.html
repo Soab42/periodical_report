@@ -11,55 +11,71 @@
 </head>
 
 <body>
-    <h1>22 point report</h1>
     <nav>
+        <h1>22 point report</h1>
+
         <a href="/zone/">Zone Report</a>
-    </nav>
-    <button type="button" id="getData">Get Data</button>
 
-    <div id="loading" class="hidden">
-        <div id="countdown-clock" class="flip-clock"></div>
+        <!-- <button type="button" id="getData">Get Data</button> -->
 
-        <div class="innerSvg">
-            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'>
-                <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' r='15' cx='35' cy='100'>
-                    <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
-                        keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='0'>
-                    </animate>
-                </circle>
-                <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.8' r='15' cx='35' cy='100'>
-                    <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
-                        keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='0.05'>
-                    </animate>
-                </circle>
-                <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.6' r='15' cx='35' cy='100'>
-                    <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
-                        keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='.1'>
-                    </animate>
-                </circle>
-                <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.4' r='15' cx='35' cy='100'>
-                    <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
-                        keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='.15'>
-                    </animate>
-                </circle>
-                <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.2' r='15' cx='35' cy='100'>
-                    <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
-                        keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='.2'>
-                    </animate>
-                </circle>
-            </svg>
+        <div id="loading" class="hidden">
+            <div id="countdown-clock" class="flip-clock"></div>
+
+            <div class="innerSvg">
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='0'>
+                        </animate>
+                    </circle>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.8' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='0.05'>
+                        </animate>
+                    </circle>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.6' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='.1'>
+                        </animate>
+                    </circle>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.4' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='.15'>
+                        </animate>
+                    </circle>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.2' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='.2'>
+                        </animate>
+                    </circle>
+                </svg>
+            </div>
         </div>
-    </div>
-    <form>
-        <title>Date Form</title>
-        <label for="fromDate">From Date:</label>
-        <input type="date" name="fromDate" id="from" required>
-        <label for="toDate">To Date:</label>
-        <input type="date" name="toDate" id="toDate" required>
-        <button type="submit" id="searchData">Search Data</button>
-    </form>
+        <form>
+            <title>Date Form</title>
+            <label for="fromDate">From Date:</label>
+            <input type="date" name="fromDate" id="from" required>
+            <label for="toDate">To Date:</label>
+            <input type="date" name="toDate" id="toDate" required>
+            <button type="submit" id="searchData">Search Data</button>
+        </form>
+    </nav>
     <div class="showTable" id="json-display"></div>
+    <div id="error">
+    </div>
+    <button type="button" id="scrollToTopBtn">
 
+
+        <svg class="svg" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32"
+            width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+                d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"
+                fill="#515151" />
+        </svg>
+
+        Go Up
+    </button>
 </body>
 
 </html>
