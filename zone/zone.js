@@ -1,16 +1,20 @@
 const jsonDisplay = document.querySelector("tbody");
+const agrogotiDisplay = document.getElementById("agrogoti");
 const infoDiv = document.getElementById("info");
 const total_periodical_progress_information = [];
 let serialNumber = 1;
-
+let serialNumber2 = 1;
+let totalData;
 const fetchData = () => {
   fetch("http://localhost:3000/api/data")
     .then((response) => response.json())
     .then((data) => {
       showDataTable(data);
+      showAgrogoti(data);
     })
     .finally(() => {
       showTotalRow();
+      showAgrogotiTotalRow();
       // console.log(totalRow);
     })
     .catch((error) => console.error("Error fetching JSON:", error));
@@ -186,8 +190,8 @@ function showTotalRow() {
     );
     return acc;
   }, {});
-  jsonDisplay.innerHTML += `<tr style="background:#45f80e70;font-weight:bold">
-   
+  totalData = totalRow;
+  jsonDisplay.innerHTML += `<tr class='totalRow'>
       <td colspan='3'>Total</td>
       <td>${totalRow.member_count_previous}</td>
       <td>${totalRow.member_count_current}</td>
@@ -388,4 +392,129 @@ function checkInitialData(acc, curr) {
 }
 function isPositiveInteger(int) {
   return int > 0;
+}
+
+function showAgrogoti(data) {
+  for (const key in data) {
+    const userData = data[key];
+
+    const {
+      members = {},
+      savings = {},
+      loans = {},
+    } = userData?.periodical_progress_data?.total_periodical_progress_info;
+
+    // Check if the username exists in the data
+    if (data[key]) {
+      agrogotiDisplay.innerHTML += `<tr>
+            <td>${serialNumber2}</td>
+            <td>${userData.branch_data.name}</td>
+            <td>${userData.branch_data.code}</td>
+            <td>${
+              members.member_count_current - members.member_count_previous
+            }</td>
+         
+            <td>${
+              savings.savings_balance_current - savings.savings_balance_previous
+            }</td>
+
+            <td>${(
+              loans.loan_outstanding_principal_current -
+              loans.loan_outstanding_principal_previous
+            ).toFixed(2)}</td>
+      
+            <td>${
+              loans.current_borrower_member - loans.previous_borrower_member
+            }</td>
+
+            <td>${
+              loans.principal_due_count_current -
+              loans.principal_due_count_previous
+            }</td>
+            <td>${(
+              loans.principal_due_current - loans.principal_due_previous
+            ).toFixed(2)}</td>
+
+
+            <td>${
+              loans.current_expired_borrower_count_current -
+              loans.current_expired_borrower_count_previous
+            }</td>
+            <td>${(
+              loans.current_expired_principal_amount_current -
+              loans.current_expired_principal_amount_previous
+            ).toFixed(2)}</td>
+
+
+            <td>${
+              loans.due_expired_principal_borrower_count_current -
+              loans.due_expired_principal_borrower_count_previous
+            }</td>
+            <td>${(
+              loans.due_expired_amount_principal_current -
+              loans.due_expired_amount_principal_previous
+            ).toFixed(2)}</td>
+
+            </tr>`;
+      serialNumber2++;
+    } else {
+      agrogotiDisplay.innerHTML += `<tr><td colSpan="3">
+            No data found for username: ${username}</td></tr>`;
+    }
+  }
+}
+function showAgrogotiTotalRow() {
+  agrogotiDisplay.innerHTML += `<tr class='totalRow'>
+      <td colspan='3'>Total</td>
+
+      <td>${
+        totalData.member_count_current - totalData.member_count_previous
+      }</td>
+
+      <td>${
+        totalData.savings_balance_current - totalData.savings_balance_previous
+      }</td>
+
+      <td>${(
+        totalData.loan_outstanding_principal_current -
+        totalData.loan_outstanding_principal_previous
+      ).toFixed(2)}</td>
+
+      <td>${
+        totalData.current_borrower_member - totalData.previous_borrower_member
+      }</td>
+
+   
+
+
+      <td>${
+        totalData.principal_due_count_current -
+        totalData.principal_due_count_previous
+      }</td>
+      <td>${(
+        totalData.principal_due_current - totalData.principal_due_previous
+      ).toFixed(2)}</td>
+
+
+      <td>${
+        totalData.current_expired_borrower_count_current -
+        totalData.current_expired_borrower_count_previous
+      }</td>
+      <td>${(
+        totalData.current_expired_principal_amount_current -
+        totalData.current_expired_principal_amount_previous
+      ).toFixed(2)}</td>
+
+
+      <td>${
+        totalData.due_expired_principal_borrower_count_current -
+        totalData.due_expired_principal_borrower_count_previous
+      }</td>
+      <td>${(
+        totalData.due_expired_amount_principal_current -
+        totalData.due_expired_amount_principal_previous
+      ).toFixed(2)}</td>
+
+    
+      </tr>`;
 }
