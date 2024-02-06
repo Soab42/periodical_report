@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateClock(countdownTime);
 
     let countdownInterval = setInterval(function () {
-      countdownTime++;
+      countdownTime--;
 
       if (countdownTime >= 0) {
         updateClock(countdownTime);
