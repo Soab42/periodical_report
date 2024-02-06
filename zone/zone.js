@@ -171,7 +171,7 @@ function showTotalRow() {
     );
     acc.OTR_principal = checkInitialData(acc.OTR_principal, curr.OTR_principal);
 
-    acc.PRA_priciple = checkInitialData(acc.PRA_priciple, curr.PRA_priciple); // Check the typo in the original) lineacc.PRA_priciple,
+    acc.PRA_priciple = checkInitialData(acc.PRA_priciple, curr.PRA_priciple); // Check the typo in the original) lineacc.
     acc.principle_recoverable = checkInitialData(
       acc.principle_recoverable,
       curr.principle_recoverable
@@ -210,8 +210,8 @@ function showTotalRow() {
       <td>${totalRow.due_expired_principal_borrower_count_current}</td>
       <td>${totalRow.due_expired_amount_principal_current.toFixed(2)}</td>
 
-      <td>${totalRow.OTR_principal.toFixed(2) / serialNumber}</td>
-      <td>${totalRow.PRA_priciple.toFixed(2) / serialNumber}</td>
+      <td>${(totalRow.OTR_principal / serialNumber).toFixed(2)}</td>
+      <td>${(totalRow.PRA_priciple / serialNumber).toFixed(2)}</td>
       <td>${totalRow.principle_recoverable.toFixed(2)}</td>
       <td>${totalRow.principle_regular_recovery.toFixed(2)}</td>
 
