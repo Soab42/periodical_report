@@ -1,4 +1,5 @@
 const jsonDisplay = document.querySelector("tbody");
+const infoDiv = document.getElementById("info");
 const total_periodical_progress_information = [];
 let serialNumber = 1;
 
@@ -21,9 +22,12 @@ fetchData();
 
 function showDataTable(data) {
   // Display JSON data in HTML
-
+  // console.log(data);
+  const firstData = data[Object.keys(data)[0]];
+  infoDiv.innerHTML = `<div>${firstData.title}</div><div>Report Date: ${firstData.date_from} to ${firstData.date_to}</div>`;
   for (const key in data) {
     const userData = data[key];
+
     const {
       members = {},
       savings = {},
