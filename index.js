@@ -31,14 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         // Display JSON data in HTML
         const jsonDisplay = document.getElementById("json-display");
-
+        // console.log(data);
         // Loop through loginCredentials usernames
-        for (const { username } of loginCredentials) {
+        for (const key in data) {
           // Check if the username exists in the data
-          if (data[username]) {
-            jsonDisplay.innerHTML += `<p>${data[username].report_view}</p><br>`;
+          if (data[key]) {
+            jsonDisplay.innerHTML += `<p>${data[key].report_view}</p><br>`;
           } else {
-            jsonDisplay.innerHTML += `<p>No data found for username: ${username}</p><br>`;
+            jsonDisplay.innerHTML += `<p>No data found for username: ${key}</p><br>`;
           }
         }
       })

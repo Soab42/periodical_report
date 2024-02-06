@@ -1,25 +1,3 @@
-const loginCredentials = [
-  { username: "sabuzbag" },
-  { username: "badda" },
-  { username: "jatrabari040" },
-  { username: "konapara" },
-  { username: "nayabazar1" },
-  { username: "noyabazar2" },
-  { username: "noyabazar3" },
-  { username: "Nayabazar-2" },
-  { username: "azampur" },
-  { username: "dkhan063" },
-  { username: "uttara103" },
-  { username: "panchaboti" },
-  { username: "postogola123" },
-  { username: "fotulla-2" },
-  { username: "samoli" },
-  { username: "lalbag" },
-  { username: "dhanmondi" },
-  { username: "Sastapur2" },
-  { username: "fotulla-1" },
-];
-
 const jsonDisplay = document.querySelector("tbody");
 const total_periodical_progress_information = [];
 let serialNumber = 1;
@@ -44,8 +22,8 @@ fetchData();
 function showDataTable(data) {
   // Display JSON data in HTML
 
-  for (const { username } of loginCredentials) {
-    const userData = data[username];
+  for (const key in data) {
+    const userData = data[key];
     const {
       members = {},
       savings = {},
@@ -60,7 +38,7 @@ function showDataTable(data) {
     }
 
     // Check if the username exists in the data
-    if (data[username]) {
+    if (data[key]) {
       jsonDisplay.innerHTML += `<tr>
             <td>${serialNumber}</td>
             <td>${userData.branch_data.name}</td>
@@ -110,7 +88,7 @@ function showDataTable(data) {
 
 function showTotalRow() {
   const totalRow = total_periodical_progress_information.reduce((acc, curr) => {
-    console.log(acc);
+    // console.log(acc);
     acc.member_count_previous = checkInitialData(
       acc.member_count_previous,
       curr.member_count_previous
