@@ -2,16 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const loading = document.getElementById("loading");
   const searchForm = document.querySelector("form");
   const errorDiv = document.getElementById("error");
-
+  const jsonDisplay = document.getElementById("json-display");
   const fetchData = () => {
     loading.classList.remove("hidden");
     loading.classList.add("loading");
-
+    jsonDisplay.innerHTML = "Data is fetching";
     fetch("http://localhost:3000/api/data")
       .then((response) => response.json())
       .then((data) => {
         // Display JSON data in HTML
-        const jsonDisplay = document.getElementById("json-display");
+
         // console.log(data);
         // Loop through loginCredentials usernames
         for (const key in data) {
