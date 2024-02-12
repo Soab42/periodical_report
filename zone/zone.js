@@ -524,3 +524,19 @@ function showAgrogotiTotalRow() {
     
       </tr>`;
 }
+
+var table1 = document.getElementById("allReport");
+var table2 = document.getElementById("diffReport");
+var allReportBtn = document.getElementById("allReportBtn");
+var diffReportBtn = document.getElementById("diffReportBtn");
+function exportToExcel(table) {
+  /* Selected the table */
+  /* Get the table content */
+  var html = table.outerHTML;
+  /* Create a new workbook */
+  var wb = XLSX.utils.table_to_book(table);
+  /* Convert the workbook to a downloadable file */
+  XLSX.writeFile(wb, "exported_table.xlsx");
+}
+allReportBtn.addEventListener("click", () => exportToExcel(table1));
+diffReportBtn.addEventListener("click", () => exportToExcel(table2));

@@ -7,6 +7,8 @@
     <title>zone</title>
     <link rel="stylesheet" href="../style.css">
     <script src="zone.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+
 </head>
 
 <body>
@@ -24,7 +26,7 @@
     </nav>
     <div class="container" id="container">
         <div class="table" id="dataTable">
-            <table>
+            <table id="allReport">
                 <thead>
                     <tr>
                         <th rowspan="3" width="4%">
@@ -265,9 +267,10 @@
                 <tbody>
                 </tbody>
             </table>
+            <button type="button" id="allReportBtn">Export to Excel</button>
         </div>
         <div class="agrogoti">
-            <table>
+            <table id="diffReport">
                 <thead>
                     <tr>
                         <th rowspan="2" width="4%">
@@ -326,6 +329,9 @@
                 </thead>
                 <tbody id="agrogoti"></tbody>
             </table>
+            <button type="button" id="allReportBtn">Export to Excel</button>
+            <button id="diffReportBtn">Export to Excel</button>
+
         </div>
     </div>
 </body>
