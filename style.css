@@ -176,6 +176,7 @@ nav {
 }
 #json-display {
   margin-top: 7rem;
+  padding: 1rem;
 }
 #dataTable {
   margin-top: 5rem;
@@ -192,6 +193,25 @@ nav {
   display: none;
   position: fixed;
   bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  background-color: #2eb7ec;
+  color: rgba(1, 6, 2, 0.64);
+  cursor: pointer;
+  /* padding: 15px; */
+  border-radius: 10rem;
+  transition: all 1s ease-in-out;
+}
+.allReportBtn {
+  display: block;
+  position: fixed;
+  top: 80px;
   right: 20px;
   z-index: 99;
   font-size: 12px;
