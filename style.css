@@ -1,9 +1,7 @@
 * {
   margin: 0;
 }
-body {
-  /* background: #5d968bb9; */
-}
+
 form {
   display: flex;
   justify-content: center;
@@ -18,14 +16,15 @@ input {
   height: 1rem;
   padding: 0.4rem;
 }
+
 label {
   padding: 0.4rem;
-  width: 100%;
+  width: 25rem;
 }
 button[type="button"] {
   width: 10rem;
   background: rgb(47, 255, 196);
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   padding: 0.5rem;
   border: none;
   box-shadow: 2px 2px 5px black;
@@ -244,4 +243,21 @@ nav {
 
 .container {
   margin-top: 5rem;
+}
+.selectOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+}
+select {
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+}
+/* Adjust height of options */
+#branch option {
+  all: unset;
+  padding: 2rem;
+  font-size: large; /* Adjust the height as needed */
 }

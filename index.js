@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchForm = document.querySelector("form");
   const errorDiv = document.getElementById("error");
   const jsonDisplay = document.getElementById("json-display");
+  const selectOption = document.getElementById("branch");
+
   const fetchData = () => {
     loading.classList.remove("hidden");
     loading.classList.add("loading");
-    jsonDisplay.innerHTML = "Data is fetching";
+    jsonDisplay.innerHTML = "";
+    selectOption.innerHTML = '<option value="">All Branch</option>';
     fetch("http://localhost:3000/api/data")
       .then((response) => response.json())
       .then((data) => {
@@ -18,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Check if the username exists in the data
           if (data[key]) {
             jsonDisplay.innerHTML += `<p>${data[key].report_view}</p><br>`;
+            selectOption.innerHTML += `<option value="${key}">${data[key].branch_data.name}</option>`;
           } else {
             jsonDisplay.innerHTML += `<p>No data found for username: ${key}</p><br>`;
           }
@@ -105,27 +109,59 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   startCountdown();
-});
 
-// Function to scroll to the top of the page
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}
-
-// Show the button when user scrolls down, hide when at top
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollToTopBtn.style.display = "flex";
-  } else {
-    scrollToTopBtn.style.display = "none";
+  // Function to scroll to the top of the page
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
-}
-scrollToTopBtn.addEventListener("click", scrollToTop);
+
+  // Show the button when user scrolls down, hide when at top
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      scrollToTopBtn.style.display = "flex";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
+  scrollToTopBtn.addEventListener("click", scrollToTop);
+
+  function searchName() {
+    const selectedValue = selectOption.value;
+    if (selectedValue) {
+      function getBranchData() {
+        fetch("http://localhost:3000/api/data")
+          .then((response) => response.json())
+          .then((data) => {
+            // Check if the username exists in the data
+            if (data[selectedValue]) {
+              jsonDisplay.innerHTML = `<p>${data[selectedValue].report_view}</p><br>`;
+            } else {
+              jsonDisplay.innerHTML = `<p>No data found for username: ${key}</p><br>`;
+            }
+
+            loading.classList.add("hidden");
+          })
+          .catch((error) => {
+            console.error("Error fetching JSON:", error),
+              (errorDiv.innerHTML = `<div class='error'>${error}</div>`);
+            loading.classList.add("hidden");
+          });
+      }
+      getBranchData();
+    } else {
+      fetchData();
+    }
+  }
+  selectOption.addEventListener("change", searchName);
+});

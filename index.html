@@ -46,20 +46,25 @@
     </div>
     <nav>
         <h1>22 point report</h1>
+        <div class="selectOption">
+            <!-- <button type="button" id="getData">Get Data</button> -->
+            <select name="branch" id="branch" title="Branch" value=''>
+                <option value="">All Branch</option>
+            </select>
+            <form>
+                <title>Date Form</title>
+                <label for="fromDate">From Date:</label>
+                <input type="date" name="fromDate" id="from" required>
+                <label for="toDate">To Date:</label>
+                <input type="date" name="toDate" id="toDate" required>
+                <button type="submit" id="searchData">Search Data</button>
+            </form>
+            <a href="/zone/">Zone Report</a>
 
-        <a href="/zone/">Zone Report</a>
-
-        <!-- <button type="button" id="getData">Get Data</button> -->
+        </div>
 
 
-        <form>
-            <title>Date Form</title>
-            <label for="fromDate">From Date:</label>
-            <input type="date" name="fromDate" id="from" required>
-            <label for="toDate">To Date:</label>
-            <input type="date" name="toDate" id="toDate" required>
-            <button type="submit" id="searchData">Search Data</button>
-        </form>
+
     </nav>
     <div class="showTable" id="json-display"></div>
 
