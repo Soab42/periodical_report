@@ -243,6 +243,7 @@ nav {
 
 .container {
   margin-top: 5rem;
+  margin: 1rem;
 }
 .selectOption {
   display: flex;
@@ -260,4 +261,22 @@ select {
   all: unset;
   padding: 2rem;
   font-size: large; /* Adjust the height as needed */
+}
+.dateForm {
+  display: flex;
+  width: 50%;
+  gap: 1rem;
+}
+
+caption {
+  font-size: 2rem;
+  background-color: #4ff8c9;
+  padding: 1rem;
+}
+#todaysDate {
+  float: right;
+  color: chocolate;
+}
+#todaysDate::before {
+  content: "Date: ";
 }

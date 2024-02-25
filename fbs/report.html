@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBS</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="report.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <h1>FBS Report</h1>
+        <select name="branch" id="branch" title="Branch" value=''>
+            <option value="">All Branch</option>
+        </select>
+        <a href="/">All Branch Report</a>
+        <a href="/fbs/">FBS</a>
+        <a href="/fbs/report.html">FBS Reprot</a>
+        <a href="/fbs/interest_payable.html">FBS Interest Payable</a>
+        <!-- <button type="button" id="getData">Get Data</button> -->
+    </nav>
+    <div class="container" id="container">
+        <table class="showTable" style="margin-top: 8rem">
+
+            <thead>
+
+                <tr style="position: sticky; background: pink; top:6.6rem;">
+                    <th>ID</th>
+                    <th>Branch ID</th>
+                    <th>Code</th>
+                    <th>Member ID</th>
+                    <!-- <th>Samity ID</th> -->
+                    <th>FBS Savings</th>
+                    <th>Interest Rate</th>
+                    <th>Opening Date</th>
+                    <th>Period</th>
+                    <th>Closing Date</th>
+                    <th>Payable Amount</th>
+                    <th>Samity Code</th>
+                    <th>Current Status</th>
+                    <th>Member Name</th>
+                    <th>Member Code</th>
+                    <th>Marital Status</th>
+                    <th>Father's Name</th>
+                    <th>Spouse's Name</th>
+                    <th>Nominee Name</th>
+                    <th>Nominee Relation</th>
+                    <th>Nominee Share</th>
+                    <th>Mobile Number</th>
+                    <th>Member Present Address</th>
+                    <th>Member Permanent Address</th>
+                    <th>Mature Date</th>
+                    <th>Cheque Number</th>
+                    <th>Total Interest Amount</th>
+                </tr>
+            <tbody id="json-display"></tbody>
+        </table>
+
+
+        <div id="error"></div>
+    </div>
+</body>
+
+</html>

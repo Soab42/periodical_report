@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBS</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="interest.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <h1>FBS Interest Payable</h1>
+        <a href="/">All Branch Report</a>
+        <a href="/fbs/">FBS</a>
+        <a href="/fbs/report">FBS Reprot</a>
+        <a href="/fbs/interest_payable.html">FBS Interest Payable</a>
+
+        <!-- <button type="button" id="getData">Get Data</button> -->
+    </nav>
+    <div class="container" id="container" style="margin-top: 8rem">
+        <div class="dateForm">
+            <input type="date" name="date" id="date">
+            <button type="submit" id="dateBtn">Show</button>
+        </div>
+        <table class="showTable">
+            <caption>Todays Interest Payable <span id="todaysDate"></span></caption>
+            <thead>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Branch ID</th>
+                    <th>Member Name</th>
+
+                    <th>Code</th>
+
+                    <th>Deposit Scheme Number</th>
+                    <th>Opening Date</th>
+                    <th>Period</th>
+                    <th>Current Status</th>
+                    <th>Interest Payable Date</th>
+                    <th>Interest Payable Amount</th>
+                    <th>Installment Number</th>
+
+                </tr>
+            <tbody id="json-display"></tbody>
+        </table>
+
+        <div id="error"></div>
+    </div>
+</body>
+
+</html>
