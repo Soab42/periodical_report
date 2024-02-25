@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((response) => response.json())
       .then((data) => {
         // console.log("data", data);
+        jsonDisplay.innerHTML = "";
         jsonData = data;
         // Loop through loginCredentials usernames
         for (const key in data) {

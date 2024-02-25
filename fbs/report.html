@@ -14,16 +14,25 @@
 <body>
     <nav>
         <h1>FBS Report</h1>
-        <select name="branch" id="branch" title="Branch" value=''>
-            <option value="">All Branch</option>
-        </select>
-        <a href="/">All Branch Report</a>
-        <a href="/fbs/">FBS</a>
-        <a href="/fbs/report.html">FBS Reprot</a>
-        <a href="/fbs/interest_payable.html">FBS Interest Payable</a>
+
+        <a class="" href="/">All Branch Report</a>
+        <a class="" href="/zone/">Zone Report</a>
+        <a class="" href="/fbs/">FBS</a>
+        <a class="active" href="/fbs/report.html">FBS Report</a>
+        <a class="" href="/fbs/interest_payable.html">FBS Interest Payable</a>
         <!-- <button type="button" id="getData">Get Data</button> -->
     </nav>
-    <div class="container" id="container">
+    <div class="selectOption">
+        <div>
+
+            <label for="branch" style="font-weight: bold; font-size: large;">Select Branch</label>
+            <select name="branch" id="branch" title="Branch" value=''>
+                <option value="">All Branch</option>
+            </select>
+        </div>
+    </div>
+    <div class="container" id="container" style="font-size: medium;">
+
         <table class="showTable" style="margin-top: 8rem">
 
             <thead>

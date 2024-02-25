@@ -46,46 +46,57 @@
     </div>
     <nav>
         <h1>22 point report</h1>
-        <div class="selectOption">
-            <!-- <button type="button" id="getData">Get Data</button> -->
-            <select name="branch" id="branch" title="Branch" value=''>
-                <option value="">All Branch</option>
-            </select>
-            <form>
-                <title>Date Form</title>
-                <label for="fromDate">From Date:</label>
-                <input type="date" name="fromDate" id="from" required>
-                <label for="toDate">To Date:</label>
-                <input type="date" name="toDate" id="toDate" required>
-                <button type="submit" id="searchData">Search Data</button>
-            </form>
-            <a href="/zone/">Zone Report</a>
-            <a href="/fbs/">FBS</a>
+
+        <a class="active" href="/">All Branch Report</a>
+        <a class="" href="/zone/">Zone Report</a>
+        <a class="" href="/fbs/">FBS</a>
+        <a class="" href="/fbs/report.html">FBS Report</a>
+        <a class="" href="/fbs/interest_payable.html">FBS Interest Payable</a>
 
 
-        </div>
 
 
 
     </nav>
-    <div class="showTable" id="json-display"></div>
+    <div class="selectOption">
+        <!-- <button type="button" id="getData">Get Data</button> -->
 
-    <div id="error">
+        <form>
+            <title>Date Form</title>
+            <label for="fromDate">From Date:</label>
+            <input type="date" name="fromDate" id="from" required>
+            <label for="toDate">To Date:</label>
+            <input type="date" name="toDate" id="toDate" required>
+            <button type="submit" id="searchData">Search Data</button>
+        </form>
+        <select name="branch" id="branch" title="Branch" value='' class="">
+            <option value="">All Branch</option>
+        </select>
     </div>
+    <div class="container">
 
-    <button type="button" id="scrollToTopBtn">
 
 
-        <svg class="svg" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32"
-            width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path
-                d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"
-                fill="#515151" />
-        </svg>
+        <div class="showTable" id="json-display"></div>
 
-        Go Up
-    </button>
+        <div id="error">
+        </div>
+
+        <button type="button" id="scrollToTopBtn">
+
+
+            <svg class="svg" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1"
+                viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"
+                    fill="#515151" />
+            </svg>
+
+            Go Up
+        </button>
+
+    </div>
 </body>
 
 </html>

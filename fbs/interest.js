@@ -1,19 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const loading = document.getElementById("loading");
   const jsonDisplay = document.getElementById("json-display");
   const inputDate = document.getElementById("date");
   const buttonDate = document.getElementById("dateBtn");
   const dateSpan = document.getElementById("todaysDate");
+  const refreshBtn = document.getElementById("refresh");
   let date = inputDate.value;
 
   const fetchData = async (today) => {
+    loading.classList.remove("hidden");
+    loading.classList.add("loading");
     dateSpan.innerHTML = today;
     date = today;
-    try {
-    } catch (error) {}
+
     fetch(`http://localhost:3000/api/fbs/interest/${today}`)
       .then((response) => response.json())
       .then((data) => {
         jsonDisplay.innerHTML = "";
+
         // console.log(data);
         if (data.length > 0) {
           data.forEach((item) => {
@@ -38,8 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
           
               </tr>`);
           });
+          loading.classList.add("hidden");
         } else {
-          jsonDisplay.innerHTML = `<tr ><th colspan="11" rowspan="12" style="background:pink; height:20rem; font-size:5rem;color:black; text-align:center">No Payment Today 😊!</th></tr>`;
+          jsonDisplay.innerHTML = `<tr><td colspan="11" rowspan="12" style="height:20rem;background:white; font-size:5rem;color:black; text-align:center">No Payment Today 😊!</td></tr>`;
         }
       })
       .finally(() => {})
@@ -57,4 +62,24 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchData(inputDate.value);
     // fetchData();
   });
+
+  async function refreshData() {
+    loading.classList.remove("hidden");
+    loading.classList.add("loading");
+    try {
+      const response = await fetch(
+        "http://localhost:3000/api/scraping/fbs_interest"
+      );
+      if (response.ok) {
+        loading.classList.add("hidden");
+
+        console.log("Scraping request sent successfully");
+      } else {
+        console.error("Failed to send scraping request");
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
+  }
+  refreshBtn.addEventListener("click", refreshData);
 });

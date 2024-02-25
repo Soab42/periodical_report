@@ -14,19 +14,61 @@
 <body>
     <nav>
         <h1>FBS Interest Payable</h1>
-        <a href="/">All Branch Report</a>
-        <a href="/fbs/">FBS</a>
-        <a href="/fbs/report">FBS Reprot</a>
-        <a href="/fbs/interest_payable.html">FBS Interest Payable</a>
+        <a class="" href="/">All Branch Report</a>
+        <a class="" href="/zone/">Zone Report</a>
+        <a class="" href="/fbs/">FBS</a>
+        <a class="" href="/fbs/report.html">FBS Report</a>
+        <a class="active" href="/fbs/interest_payable.html">FBS Interest Payable</a>
 
         <!-- <button type="button" id="getData">Get Data</button> -->
     </nav>
-    <div class="container" id="container" style="margin-top: 8rem">
-        <div class="dateForm">
+    <div class="selectOption">
+        <div style="display: flex; gap: .5rem;">
+            <label for="branch" style="font-weight: bold; font-size: large; width: 13rem;">Select Date</label>
             <input type="date" name="date" id="date">
             <button type="submit" id="dateBtn">Show</button>
         </div>
-        <table class="showTable fbs" style="font-size: larger;">
+
+        <button type="submit" style=" font-size: medium; width: 10%;" id="refresh">Refresh Data</button>
+
+
+    </div>
+    <div class="container" id="container">
+        <div id="loading" class="hidden">
+            <div id="countdown-clock" class="flip-clock"></div>
+
+            <div class="innerSvg">
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='0'>
+                        </animate>
+                    </circle>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.8' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='0.05'>
+                        </animate>
+                    </circle>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.6' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='.1'>
+                        </animate>
+                    </circle>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.4' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='.15'>
+                        </animate>
+                    </circle>
+                    <circle fill='#FF156D' stroke='#FF156D' stroke-width='15' opacity='.2' r='15' cx='35' cy='100'>
+                        <animate attributeName='cx' calcMode='spline' dur='2' values='35;165;165;35;35'
+                            keySplines='0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1' repeatCount='indefinite' begin='.2'>
+                        </animate>
+                    </circle>
+                </svg>
+            </div>
+        </div>
+
+        <table class="showTable fbs" style="font-size: larger; margin-top: 8rem;">
             <caption>Todays Interest Payable <span id="todaysDate"></span></caption>
             <thead>
 
