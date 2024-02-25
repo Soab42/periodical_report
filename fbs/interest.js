@@ -13,14 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(`http://localhost:3000/api/fbs/interest/${today}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        jsonDisplay.innerHTML = "";
+        // console.log(data);
         if (data.length > 0) {
           data.forEach((item) => {
             const todaysPayable = item?.saving_schedules?.filter(
               (entry) => entry.date === today
             );
-            console.log(todaysPayable);
-            return (jsonDisplay.innerHTML = `<tr>
+            // console.log(todaysPayable);
+            return (jsonDisplay.innerHTML += `<tr>
               <td>${item.row.id}</td>
               <td>${item.row.branch_id}</td>
               <td>${item.row.member_info}</td>
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   if (!date) {
     const today = new Date().toISOString().slice(0, 10);
+    inputDate.value = today;
     fetchData(today);
   }
 

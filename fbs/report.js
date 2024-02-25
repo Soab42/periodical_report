@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // console.log("jsonData", data);
   function searchName() {
     const selectedValue = selectOption.value;
-    console.log(selectedValue);
+    // console.log(selectedValue);
     if (selectedValue) {
       function getBranchData() {
         fetch("http://localhost:3000/api/fbs")
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .then((data) => {
             // Check if the username exists in the data
             const value = data[selectedValue];
-            console.log(value);
+            // console.log(value);
 
             if (Array.isArray(value.fdr_info)) {
               jsonDisplay.innerHTML = value.fdr_info?.map(

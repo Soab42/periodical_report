@@ -264,10 +264,21 @@ select {
 }
 .dateForm {
   display: flex;
-  width: 50%;
+  width: 25%;
   gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.dateForm > input {
+  height: auto;
+  font-size: x-large;
+}
+#dateBtn {
+  font-size: medium;
+  width: 10rem;
+  height: auto;
+}
 caption {
   font-size: 2rem;
   background-color: #4ff8c9;
@@ -279,4 +290,11 @@ caption {
 }
 #todaysDate::before {
   content: "Date: ";
+}
+.fbs > table > tr:hover {
+  background-color: rgb(209, 252, 197) !important;
+  color: black !important;
+}
+.fbs > table > tr:nth-child(even) {
+  background: #81cee1;
 }

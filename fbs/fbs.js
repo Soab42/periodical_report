@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("http://localhost:3000/api/fbs")
       .then((response) => response.json())
       .then((data) => {
-        console.log("data", data);
+        // console.log("data", data);
 
         // Loop through loginCredentials usernames
         for (const key in data) {

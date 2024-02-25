@@ -53,7 +53,7 @@ import ExcelJs from "exceljs";
             (element) => element.textContent,
             tdElement
           );
-          console.log("NextDay:", tdText.trim());
+          // console.log("NextDay:", tdText.trim());
           await anchorElement.click(); // Click on the anchor element
           // console.log("click", i + 1);
         } else {
