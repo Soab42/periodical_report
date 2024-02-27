@@ -45,11 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
           loading.classList.add("hidden");
         } else {
           jsonDisplay.innerHTML = `<tr><td colspan="11" rowspan="12" style="height:20rem;background:white; font-size:5rem;color:black; text-align:center">No Payment Today 😊!</td></tr>`;
+          loading.classList.add("hidden");
         }
       })
-      .finally(() => {})
       .catch((error) => {
         console.error("Error fetching JSON:", error);
+        loading.classList.add("hidden");
       });
   };
   if (!date) {
@@ -76,9 +77,11 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Scraping request sent successfully");
       } else {
         console.error("Failed to send scraping request");
+        loading.classList.add("hidden");
       }
     } catch (error) {
       console.error("An error occurred:", error);
+      loading.classList.add("hidden");
     }
   }
   refreshBtn.addEventListener("click", refreshData);
