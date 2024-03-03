@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((response) => response.json())
       .then((data) => {
         // console.log("data", data);
-        jsonDisplay.innerHTML = "";
+        jsonDisplay.innerHTML = "<br></br>";
         jsonData = data;
         // Loop through loginCredentials usernames
         for (const key in data) {
@@ -19,11 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
           const value = data[key];
           // console.log(value);
           // Check if the username exists in the data
+
           if (Array.isArray(value.fdr_info)) {
-            jsonDisplay.innerHTML += value.fdr_info?.map(
-              (item) => `
+            jsonDisplay.innerHTML += value.fdr_info
+              ?.map(
+                (item, i) => `
                <tr>
-                 <td>${item.id}</td>
+               <td>${i + 1}</td>
+                 <td><a href='member.html?id=${item.id}' >${item.id}</a></td>
                  <td>${value.branch_info.name}-${item.branch_id}</td>
                  <td>${item.code}</td>
                  <td>${item.member_id}</td>
@@ -52,10 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
                  <td>${item.total_interest_amount}</td>
                </tr>
              `
-            );
+              )
+              .join(" ");
             selectOption.innerHTML += `<option value="${key}">${data[key].branch_info.name}</option>`;
+            jsonDisplay.innerHTML += `<br></br>`;
           } else {
-            jsonDisplay.innerHTML += `<br><tr > <th colspan="28" style="padding:10px">No data found for : ${key} Branch</th></tr><br>`;
+            jsonDisplay.innerHTML += `<tr > <th colspan="28" style="padding:10px">No data found for : ${key} Branch</th></tr><br></br> `;
           }
         }
       })
@@ -80,13 +85,14 @@ document.addEventListener("DOMContentLoaded", () => {
             // console.log(value);
 
             if (Array.isArray(value.fdr_info)) {
-              jsonDisplay.innerHTML = value.fdr_info?.map(
-                (item) => `<tr>
-                   <td>${item.id}</td>
+              jsonDisplay.innerHTML = value.fdr_info
+                ?.map(
+                  (item, i) => `<tr>
+                  <td>${i + 1}</td>
+                   <td><a href='member.html?id=${item.id}' >${item.id}</a></td>
                    <td>${value.branch_info.name}-${item.branch_id}</td>
                    <td>${item.code}</td>
                    <td>${item.member_id}</td>
-             
                    <td>${item.weekly_savings}</td>
                    <td>${item.interest_rate}</td>
                    <td>${item.opening_date}</td>
@@ -111,9 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td>${item.total_interest_amount}</td>
                  </tr>
                `
-              );
+                )
+                .join(" ");
             } else {
-              jsonDisplay.innerHTML = `<p>No data found for username: ${key}</p><br>`;
+              jsonDisplay.innerHTML = `<td>No data found for username: ${key}</td>`;
             }
 
             // loading.classList.add("hidden");

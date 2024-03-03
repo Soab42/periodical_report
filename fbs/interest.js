@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             );
             // console.log(todaysPayable);
             return (jsonDisplay.innerHTML += `<tr>
-              <td>${item.row.id}</td>
+              <td class='member'><a href='member.html?id=${item.row.id}' >${item.row.id}</a></td>
               <td>${item.row.branch_id}</td>
               <td>${item.row.member_info}</td>
               <td>${item.row.code}</td>

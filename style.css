@@ -52,6 +52,7 @@ td {
   text-align: left;
   border: 1px solid #312929;
   color: rgb(16, 16, 15);
+  z-index: 0;
 }
 
 th,
@@ -65,7 +66,7 @@ th,
 tr:hover {
   /* background-color: #f5f5f5; */
 }
-a {
+nav > a {
   font-size: large;
   color: #4ff8c9;
   text-decoration: none;
@@ -75,8 +76,9 @@ a {
   transition: all 1s ease-in-out;
   border-bottom: 1px solid transparent;
   overflow: hidden;
+  z-index: 0;
 }
-a::after {
+nav > a::after {
   content: "";
   height: 0.2rem;
   width: 100%;
@@ -88,7 +90,7 @@ a::after {
   transform: rotate(90deg);
   transform: translateX(-100%);
 }
-a:hover::after {
+nav:a:hover::after {
   transition: all 0.5s ease-in-out;
   transform: rotate(0deg);
   /* height: 100%; */
@@ -334,4 +336,10 @@ caption {
 }
 .fbs > table > tr:nth-child(even) {
   background: #81cee1;
+}
+a {
+  text-decoration: none;
+}
+tr:hover {
+  background-color: #f0cece;
 }
