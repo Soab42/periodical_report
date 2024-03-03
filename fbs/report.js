@@ -93,7 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
             jsonDisplay.innerHTML += `<tr style=''>
             <th colspan='5'>${data[key].branch_info.name} Total</th>
             <th>${branch_total_data[value.branch_info.name]["count"]}</th>
-            <th>${branch_total_data[value.branch_info.name]["amount"]}</th>
+            <th>${branch_total_data[value.branch_info.name][
+              "amount"
+            ].toLocaleString("en-IN")}</th>
             <th colspan='20'></th>
             </tr>`;
           } else {
@@ -103,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
         jsonDisplay.innerHTML += `<tr style=''>
         <th colspan='5'>Zone Total</th>
         <th>${total_data["count"]}</th>
-        <th>${total_data["amount"]}</th>
+        <th>${total_data["amount"].toLocaleString("en-IN")}</th>
         <th colspan='20'></th>
         </tr>`;
       })
@@ -172,7 +174,9 @@ document.addEventListener("DOMContentLoaded", () => {
             jsonDisplay.innerHTML += `<tr style=''>
             <th colspan='4'></th>
             <th>${branch_total_data[value.branch_info.name]["count"]}</th>
-            <th>${branch_total_data[value.branch_info.name]["amount"]}</th>
+            <th>${branch_total_data[value.branch_info.name][
+              "amount"
+            ].toLocaleString("en-IN")}</th>
             <th colspan='21'></th>
             </tr>`;
             // loading.classList.add("hidden");
