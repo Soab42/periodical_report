@@ -381,13 +381,13 @@ function calculateChanges(totalRow) {
             ? ""
             : total_due_amount.toFixed(2)
         }</div>
-    </td><td>
-    <div align="center"></div></td>
+    </td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
     <td>
-    <div align="center"></div></td>
-    <td><div align="center"></div></td>
-    <td><div align="center"></div></td>
-
+    <div align="center">New Due</div></td>
+    <td>
+    <div align="center">${recoverable.toFixed(2)}</div></td>
       </tr>`;
 }
 function checkInitialData(acc, curr) {
