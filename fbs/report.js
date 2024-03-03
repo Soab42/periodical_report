@@ -133,22 +133,20 @@ document.addEventListener("DOMContentLoaded", () => {
                   (item, i) => `<tr>
                   <td>${i + 1}</td>
                    <td><a href='member.html?id=${item.id}' >${item.id}</a></td>
-                   <td>${value.branch_info.name}-${item.branch_id}</td>
+                   <td>${value.branch_info.name}</td>
                    <td>${item.code}</td>
-                   <td>${item.member_id}</td>
+                   <td>${item.member_name}</td>
+                   <td>${item.member_code}</td>
                    <td>${item.weekly_savings}</td>
                    <td>${item.interest_rate}</td>
                    <td>${item.opening_date}</td>
                    <td>${item.period}</td>
                    <td>${item.closing_date || ""}</td>
                    <td>${item.payable_amount}</td>
-                   <td>${item.samity_code}</td>
                    <td>${item.current_status}</td>
-                   <td>${item.member_name}</td>
-                   <td>${item.member_code}</td>
-                   <td>${item.marital_status}</td>
+                 
+                   <td>${getMarriedStatus(item.marital_status)}</td>
                    <td>${item.fathers_name}</td>
-                   <td>${item?.spouse_name || ""}</td>
                    <td>${item?.nominee_info[0]?.name || ""}</td>
                    <td>${item?.nominee_info[0]?.relation || ""}</td>
                    <td>${item?.nominee_info[0]?.share || ""}</td>
@@ -157,7 +155,13 @@ document.addEventListener("DOMContentLoaded", () => {
                    <td>${item.member_permanent_address}</td>
                    <td>${item.mature_date}</td>
                    <td>${item.cheque_no}</td>
-                   <td>${item.total_interest_amount}</td>
+                   <td style=" width:4rem; height:2rem ;">
+                   <a href='member.html?id=${
+                     item.id
+                   }' style="font-size: .9rem; font-weight:bold">
+                   👁️ View
+               </a>
+                  </td>
                  </tr>
                `
                 )
