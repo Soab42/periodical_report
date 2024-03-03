@@ -3,16 +3,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const selectOption = document.getElementById("branch");
 
   let jsonData;
-
+  let total_data = { count: 0, amount: 0 };
+  let branch_total_data = {};
+  const getMarriedStatus = (status) => {
+    switch (status) {
+      case "M":
+        return "Married";
+      case "S":
+        return "Single";
+      // Add more cases as needed
+      default:
+        break;
+    }
+  };
   const fetchData = async () => {
-    try {
-    } catch (error) {}
     fetch("http://localhost:3000/api/fbs")
       .then((response) => response.json())
       .then((data) => {
         // console.log("data", data);
         jsonDisplay.innerHTML = "<br></br>";
         jsonData = data;
+        let sl = 0;
         // Loop through loginCredentials usernames
         for (const key in data) {
           // console.log("key", key);
@@ -22,28 +33,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
           if (Array.isArray(value.fdr_info)) {
             jsonDisplay.innerHTML += value.fdr_info
-              ?.map(
-                (item, i) => `
+              ?.map((item, i) => {
+                sl++;
+                total_data["count"]++;
+                total_data["amount"] += Number(item.weekly_savings);
+                // Check if the branch name exists in branch_total_data
+                if (!branch_total_data[value.branch_info.name]) {
+                  // If not, initialize a new object for that branch
+                  branch_total_data[value.branch_info.name] = {
+                    count: 0,
+                    amount: 0,
+                  };
+                }
+                branch_total_data[value.branch_info.name]["count"]++;
+                branch_total_data[value.branch_info.name]["amount"] += Number(
+                  item.weekly_savings
+                );
+                return `
                <tr>
-               <td>${i + 1}</td>
+               <td>${sl}</td>
                  <td><a href='member.html?id=${item.id}' >${item.id}</a></td>
-                 <td>${value.branch_info.name}-${item.branch_id}</td>
+                 <td>${value.branch_info.name}</td>
                  <td>${item.code}</td>
-                 <td>${item.member_id}</td>
-        
+                 <td>${item.member_name}</td>
+                 <td>${item.member_code}</td>
                  <td>${item.weekly_savings}</td>
                  <td>${item.interest_rate}</td>
                  <td>${item.opening_date}</td>
                  <td>${item.period}</td>
                  <td>${item.closing_date || ""}</td>
                  <td>${item.payable_amount}</td>
-                 <td>${item.samity_code}</td>
                  <td>${item.current_status}</td>
-                 <td>${item.member_name}</td>
-                 <td>${item.member_code}</td>
-                 <td>${item.marital_status}</td>
+              
+                 <td>${getMarriedStatus(item.marital_status)}</td>
                  <td>${item.fathers_name}</td>
-                 <td>${item?.spouse_name || ""}</td>
                  <td>${item?.nominee_info[0]?.name || ""}</td>
                  <td>${item?.nominee_info[0]?.relation || ""}</td>
                  <td>${item?.nominee_info[0]?.share || ""}</td>
@@ -52,17 +75,37 @@ document.addEventListener("DOMContentLoaded", () => {
                  <td>${item.member_permanent_address}</td>
                  <td>${item.mature_date}</td>
                  <td>${item.cheque_no}</td>
-                 <td>${item.total_interest_amount}</td>
+                 <td style=" width:4rem; height:2rem ;">
+                 <a href='member.html?id=${
+                   item.id
+                 }' style="font-size: .9rem; font-weight:bold">
+                 👁️ View
+             </a>
+                </td>
+
+
+
                </tr>
-             `
-              )
+             `;
+              })
               .join(" ");
             selectOption.innerHTML += `<option value="${key}">${data[key].branch_info.name}</option>`;
-            jsonDisplay.innerHTML += `<br></br>`;
+            jsonDisplay.innerHTML += `<tr style=''>
+            <th colspan='5'>${data[key].branch_info.name} Total</th>
+            <th>${branch_total_data[value.branch_info.name]["count"]}</th>
+            <th>${branch_total_data[value.branch_info.name]["amount"]}</th>
+            <th colspan='20'></th>
+            </tr>`;
           } else {
-            jsonDisplay.innerHTML += `<tr > <th colspan="28" style="padding:10px">No data found for : ${key} Branch</th></tr><br></br> `;
+            jsonDisplay.innerHTML += `<tr > <td colspan="28" style="padding:10px">No data found for : ${key} Branch</td></tr> `;
           }
         }
+        jsonDisplay.innerHTML += `<tr style=''>
+        <th colspan='5'>Zone Total</th>
+        <th>${total_data["count"]}</th>
+        <th>${total_data["amount"]}</th>
+        <th colspan='20'></th>
+        </tr>`;
       })
       .finally(() => {})
       .catch((error) => {
@@ -122,7 +165,12 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
               jsonDisplay.innerHTML = `<td>No data found for username: ${key}</td>`;
             }
-
+            jsonDisplay.innerHTML += `<tr style=''>
+            <th colspan='4'></th>
+            <th>${branch_total_data[value.branch_info.name]["count"]}</th>
+            <th>${branch_total_data[value.branch_info.name]["amount"]}</th>
+            <th colspan='21'></th>
+            </tr>`;
             // loading.classList.add("hidden");
           })
           .catch((error) => {
