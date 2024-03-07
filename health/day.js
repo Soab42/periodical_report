@@ -20,38 +20,48 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     let html = "";
     let sl = 0;
-    html += `<tr style='font-size:1.5rem'>
+
+    let branchName = Object.keys(dayData)[0];
+
+    html += `<tr style='font-size:1.2rem; width:10rem'>
+    <th colspan='2'>Health Software Working Date</th>
+    <th></th>
+    <th>Reporting Date: ${dayData[branchName].reportingDate.slice(0, 10)}</th>
+    </tr>
+    <tr style='font-size:1.2rem; width:10rem'>
     <th>sl</th>
     <th>Branch Name</th>
-    <th>Working Day</th>
+    <th>Software Working Day</th>
     <th>Lag Day</th>
     
     </tr>`;
 
     for (branch in dayData) {
-      dayData[branch].map((data) => {
-        // console.log(data);
-        // Define the two dates
-        const date1 = new Date(data[1]);
-        const date2 = new Date(); // This will take today's date
+      // console.log(dayData);
+      const branchData = dayData[branch];
 
-        // Calculate the difference in milliseconds
-        const differenceInMilliseconds = date2 - date1;
+      const date1 = new Date(branchData.workingDate);
+      const date2 = new Date(); // This will take today's date
+      // console.log(data);
+      // Calculate the difference in milliseconds
+      const differenceInMilliseconds = date2 - date1;
 
-        // Convert milliseconds to days
-        const differenceInDays =
-          differenceInMilliseconds / (1000 * 60 * 60 * 24);
-        sl++;
-        html += `<tr style="background: ${
-          differenceInDays > 5 ? "#FC819E" : "#A5DD9B"
-        }; font-size:1.5rem;">
+      // Convert milliseconds to days
+      const differenceInDays = differenceInMilliseconds / (1000 * 60 * 60 * 24);
+      sl++;
+      html += `<tr style="width:10rem;background: ${
+        differenceInDays >= 5
+          ? "#FC819E"
+          : differenceInDays >= 3
+          ? "#F6FDC3"
+          : "#A5DD9B"
+      }; font-size:1.5rem;">
           <td>${sl}</td>
-          <td>${data[0]}</td>
-          <td>${data[1]}</td>
+          <td>${branchData.branchName}</td>
+          <td>${branchData.workingDate}</td>
           <td >${Math.floor(differenceInDays)}</td>
-         
+
           </tr>`;
-      });
 
       //   console.log(RpData[branch]);
     }

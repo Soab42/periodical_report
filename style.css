@@ -1,7 +1,23 @@
 * {
   margin: 0;
 }
+.singleButton {
+  width: auto;
+  font-size: medium;
+  border-bottom-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  padding: 0.5rem;
+  padding-inline: 2rem;
+  transition: all 0.5s ease-in-out;
+  background: #4ff8c9;
+}
 
+.singleButton:hover {
+  border-top-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+}
 form {
   display: flex;
   justify-content: center;
@@ -282,7 +298,7 @@ nav {
   top: 65px;
   width: 100%;
   padding: 0.5rem;
-  background: white;
+  background: rgb(255, 255, 255);
 }
 select {
   height: 2rem;
