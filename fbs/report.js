@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const jsonDisplay = document.getElementById("json-display");
+  const reportDisplay = document.getElementById("report-display");
   const selectOption = document.getElementById("branch");
 
   let jsonData;
@@ -34,22 +35,25 @@ document.addEventListener("DOMContentLoaded", () => {
           if (Array.isArray(value.fdr_info)) {
             jsonDisplay.innerHTML += value.fdr_info
               ?.map((item, i) => {
-                sl++;
-                total_data["count"]++;
-                total_data["amount"] += Number(item.weekly_savings);
-                // Check if the branch name exists in branch_total_data
-                if (!branch_total_data[value.branch_info.name]) {
-                  // If not, initialize a new object for that branch
-                  branch_total_data[value.branch_info.name] = {
-                    count: 0,
-                    amount: 0,
-                  };
-                }
-                branch_total_data[value.branch_info.name]["count"]++;
-                branch_total_data[value.branch_info.name]["amount"] += Number(
-                  item.weekly_savings
-                );
-                return `
+                if (item.current_status === "Active") {
+                  sl++;
+                  total_data["count"]++;
+                  total_data["amount"] += Number(item.weekly_savings);
+
+                  // Check if the branch name exists in branch_total_data
+                  if (!branch_total_data[value.branch_info.name]) {
+                    // If not, initialize a new object for that branch
+                    branch_total_data[value.branch_info.name] = {
+                      count: 0,
+                      amount: 0,
+                    };
+                  }
+                  branch_total_data[value.branch_info.name]["count"]++;
+                  branch_total_data[value.branch_info.name]["amount"] += Number(
+                    item.weekly_savings
+                  );
+
+                  return `
                <tr>
                <td>${sl}</td>
                  <td><a href='member.html?id=${item.id}' >${item.id}</a></td>
@@ -87,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                </tr>
              `;
+                }
               })
               .join(" ");
             selectOption.innerHTML += `<option value="${key}">${data[key].branch_info.name}</option>`;
@@ -97,9 +102,9 @@ document.addEventListener("DOMContentLoaded", () => {
               "amount"
             ].toLocaleString("en-IN")}</th>
             <th colspan='20'></th>
-            </tr>`;
+              </tr>`;
           } else {
-            jsonDisplay.innerHTML += `<tr > <td colspan="28" style="padding:10px">No data found for : ${key} Branch</td></tr> `;
+            jsonDisplay.innerHTML += `<tr > <td colspan="28" style="padding:10px">No data found for : ${data[key].branch_info.name} Branch</td></tr> `;
           }
         }
         jsonDisplay.innerHTML += `<tr style=''>
@@ -108,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <th>${total_data["amount"].toLocaleString("en-IN")}</th>
         <th colspan='20'></th>
         </tr>`;
+        showResults();
       })
       .finally(() => {})
       .catch((error) => {
@@ -185,10 +191,31 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error fetching JSON:", error);
           });
       }
+      showResults();
       getBranchData();
     } else {
       fetchData();
     }
   }
+
   selectOption.addEventListener("change", searchName);
+  function showResults() {
+    let sl = 0;
+    reportDisplay.innerHTML = "";
+    for (const branch in branch_total_data) {
+      sl++;
+      reportDisplay.innerHTML += `<tr>
+      <th >${sl}</th>
+      <th >${branch}</th>
+      <th>${branch_total_data[branch].count}</th>
+      <th>${branch_total_data[branch].amount.toLocaleString("en-IN")}</th>
+      </tr>`;
+    }
+    //
+    reportDisplay.innerHTML += `<tr style=''>
+    <th colspan='2'>Zone Total</th>
+    <th>${total_data["count"]}</th>
+    <th>${total_data["amount"].toLocaleString("en-IN")}</th>
+    </tr>`;
+  }
 });
