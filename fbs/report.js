@@ -96,9 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
               .join(" ");
             selectOption.innerHTML += `<option value="${key}">${data[key].branch_info.name}</option>`;
             jsonDisplay.innerHTML += `<tr style=''>
-            <th colspan='5'>${data[key].branch_info.name} Total</th>
-            <th>${branch_total_data[value.branch_info.name]["count"]}</th>
-            <th>${branch_total_data[value.branch_info.name][
+            <th colspan='5'>${data[key]?.branch_info.name} Total</th>
+            <th>${branch_total_data[value?.branch_info.name]["count"]}</th>
+            <th>${branch_total_data[value?.branch_info.name][
               "amount"
             ].toLocaleString("en-IN")}</th>
             <th colspan='20'></th>
