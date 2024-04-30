@@ -155,9 +155,9 @@ document.addEventListener("DOMContentLoaded", () => {
                  
                    <td>${getMarriedStatus(item.marital_status)}</td>
                    <td>${item.fathers_name}</td>
-                   <td>${item?.nominee_info[0]?.name || ""}</td>
-                   <td>${item?.nominee_info[0]?.relation || ""}</td>
-                   <td>${item?.nominee_info[0]?.share || ""}</td>
+                   // <td>${item?.nominee_info[0]?.name || ""}</td>
+                   // <td>${item?.nominee_info[0]?.relation || ""}</td>
+                   // <td>${item?.nominee_info[0]?.share || ""}</td>
                    <td>${item.mobile_no}</td>
                    <td>${item.member_present_address}</td>
                    <td>${item.member_permanent_address}</td>
