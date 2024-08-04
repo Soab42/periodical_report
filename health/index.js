@@ -9,21 +9,21 @@ document.addEventListener("DOMContentLoaded", () => {
     let html = "";
 
     for (branch in RpData) {
-      html += `<br></br><tr><th colspan='5'>${branch}</th></tr>`;
-      html += `<tr></tr>`;
+      html += `<table>`;
+      html += `<tr><th colspan='5' class="branch">${branch}</th></tr>`;
       selectOption.innerHTML += `<option value="${branch}">${branch}</option>`;
       RpData[branch].map((data) => {
         // console.log(data);
-
-        html += `<tr>
-        <td>${data[0]}</td>
-        <td>${data[1]}</td>
-        <td>${data[2]}</td>
-        <td>${data[3]}</td>
-        <td>${data[4]}</td>
+        html += `<tr>`;
+        html +=
+          data[0] == "Payments" ? `<td>-</td>` : `<td>${data[0] || "-"}</td>`;
+        html += `<td class="description">${data[1] || "-"}</td>
+        <td class="tMonth">${data[2] || "-"}</td>
+        <td class="tYear">${data[3] || "-"}</td>
+        <td class="cumulative">${data[4] || "-"}</td>
         </tr>`;
       });
-
+      html += `</table>`;
       //   console.log(RpData[branch]);
     }
 

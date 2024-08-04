@@ -359,3 +359,27 @@ a {
 tr:hover {
   background-color: #f0cece;
 }
+
+.tableContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 6rem;
+  padding: 1rem;
+}
+.tableContainer > table {
+  font-size: larger;
+  text-align: center;
+}
+.description {
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+  padding-inline: 1rem;
+  min-width: 15rem;
+}
+.branch {
+  text-align: center;
+  font-size: larger;
+  color: #2eb7ec;
+  height: 2rem;
+}

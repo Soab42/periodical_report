@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        gap: 0.5rem;
+        text-transform: capitalize;
+        align-items: start;
+      }
+      input {
+        margin: 0;
+      }
+      label {
+        text-transform: capitalize;
+        margin: 0;
+      }
+      select {
+        width: 100%;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <h1>22 point report</h1>
+    </nav>
+    <div class="selectOption">
+      <!-- <button type="button" id="getData">Get Data</button> -->
+
+      <form id="puppeteerForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" /><br /><br />
+
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" /><br /><br />
+
+        <label for="fileUpload">Excel File:</label>
+        <input type="file" id="fileUpload" name="fileUpload" /><br /><br />
+
+        <label for="cbo_date">Date Range:</label>
+
+        <select name="cbo_date" id="cbo_date" name="cbo_date">
+          <option value="">All Date</option>
+          <option value="01/07/2026 - 30/06/2027">
+            01/07/2026 - 30/06/2027
+          </option>
+          <option value="01/07/2025 - 30/06/2026">
+            01/07/2025 - 30/06/2026
+          </option>
+          <option value="01/07/2024 - 30/06/2025">
+            01/07/2024 - 30/06/2025
+          </option>
+          <option value="01/07/2023 - 30/06/2024">
+            01/07/2023 - 30/06/2024
+          </option>
+          <option value="01/07/2022 - 30/06/2023">
+            01/07/2022 - 30/06/2023
+          </option>
+          <option value="01/07/2021 - 30/06/2022">
+            01/07/2021 - 30/06/2022
+          </option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="budget.js"></script>
+  </body>
+</html>
