@@ -4,30 +4,37 @@ document
     e.preventDefault();
 
     const formData = new FormData(e.target);
-    const username = formData.get("username");
-    const password = formData.get("password");
-    const fileUpload = formData.get("fileUpload");
-    const cbo_date = formData.get("cbo_date");
-    // console.log(fileUpload);
-    if (fileUpload) {
-      const fileURL = URL.createObjectURL(fileUpload);
-      console.log("File URL:", fileURL);
-      // You can now use the fileURL as needed
-      const data = {
-        username,
-        password,
-        fileURL,
-        cbo_date,
-      };
-      // console.log(data);
-      fetch("http://localhost:3000/api/budget", {
+
+    try {
+      const response = await fetch("http://localhost:3000/api/upload", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
+        body: formData,
       });
-    } else {
-      console.log("No file uploaded.");
+
+      const file = await response.json();
+      console.log(file.url);
+
+      if (file) {
+        const username = formData.get("username");
+        const password = formData.get("password");
+        const cbo_date = formData.get("cbo_date");
+        const filePath = file.url;
+        const data = {
+          username,
+          password,
+          filePath,
+          cbo_date,
+        };
+
+        fetch("http://localhost:3000/api/budget", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
     }
   });
