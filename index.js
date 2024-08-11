@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
     loading.classList.add("loading");
     jsonDisplay.innerHTML = "";
     selectOption.innerHTML = '<option value="">All Branch</option>';
-    fetch("http://localhost:3000/api/data")``
+    fetch("http://localhost:3000/api/data")
       .then((response) => response.json())
       .then((data) => {
         // Display JSON data in HTML
 
-        // console.log(data);
+        console.log(data);
         // Loop through loginCredentials usernames
         for (const key in data) {
           // Check if the username exists in the data
